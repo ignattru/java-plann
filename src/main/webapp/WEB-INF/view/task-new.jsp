@@ -77,10 +77,10 @@
             <div class="form-group col-md-4">
                 <label>Исполнитель:</label>
                 <spring:select path="makerid" class="form-control">
-                    <spring:option value="1">user1</spring:option>
-                    <spring:option value="2">user2</spring:option>
-                    <spring:option value="3">user3</spring:option>
-                    <spring:option value="4">user4</spring:option>
+                    <spring:option value="1">Евгений Игнатуша</spring:option>
+                    <spring:option value="2">Антон Деплоев</spring:option>
+                    <spring:option value="3">Игорь Коммитов</spring:option>
+                    <spring:option value="4">Анастасия Гитхабавна</spring:option>
                 </spring:select>
             </div>
         </div>
