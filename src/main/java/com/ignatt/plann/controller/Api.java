@@ -1,5 +1,7 @@
 package com.ignatt.plann.controller;
 
+import com.ignatt.plann.entity.Task;
+import com.ignatt.plann.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -9,36 +11,36 @@ import java.util.List;
 public class Api {
 
     @Autowired
-    private EmployeeService employeeService;
+    private TaskService taskService;
 
-    @GetMapping("/employees")
-    public List<Employee>showAllEmployees(){
-        List<Employee> allEmployees = employeeService.getAllEmployees();
+    @GetMapping("/tasklist")
+    public List<Task>showAllEmployees(){
+        List<Task> allEmployees = taskService.getAllTask();
         return allEmployees;
     }
 
-    @GetMapping("/employees/{id}")
-    public Employee getEmployee(@PathVariable int id){
-        Employee employee = employeeService.getEmployee(id);
-        return employee;
+    @GetMapping("/task/{id}")
+    public Task getTask(@PathVariable int id){
+        Task task = taskService.getTask(id);
+        return task;
     }
 
-    @PostMapping("/employees")
-    public Employee addNewEmployee(@RequestBody Employee employee){
-        employeeService.saveEmployee(employee);
-        return employee;
+    @PostMapping("/tasklist")
+    public Task addNewTask(@RequestBody Task task){
+        taskService.saveTask(task);
+        return task;
     }
 
-    @PutMapping("/employees")
-    public Employee updateEmployee(@RequestBody Employee employee){
-        employeeService.saveEmployee(employee);
-        return employee;
+    @PutMapping("/tasklist")
+    public Task updateTask(@RequestBody Task task){
+        taskService.saveTask(task);
+        return task;
     }
 
-    @DeleteMapping("/employees/{id}")
-    public String deleteEmployee (@PathVariable int id){
-        Employee employee = employeeService.getEmployee(id);
-        employeeService.deleteEmployee(id);
-        return "Employee with ID = " + id+ "was deleted";
+    @DeleteMapping("/task/{id}")
+    public String deleteTask (@PathVariable int id){
+        Task task = taskService.getTask(id);
+        taskService.deleteTask(id);
+        return "Task with ID = " + id + "was deleted";
     }
 }
