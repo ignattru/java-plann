@@ -72,20 +72,20 @@
             <section class="tabs">
                 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >Срочное и важное</a>
+                        <a class="nav-link active" id="1-tab" data-toggle="tab" href="#a" role="tab" aria-controls="a" aria-selected="true" >Срочное и важное</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Срочное и не важное</a>
+                        <a class="nav-link" id="2-tab" data-toggle="tab" href="#b" role="tab" aria-controls="b" aria-selected="false">Срочное и не важное</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Не срочное но важное</a>
+                        <a class="nav-link" id="3-tab" data-toggle="tab" href="#c" role="tab" aria-controls="c" aria-selected="false">Не срочное но важное</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="deyatel-tab" data-toggle="tab" href="#deyatel" role="tab" aria-controls="deyatel" aria-selected="false">Не срочное и не важное</a>
+                        <a class="nav-link" id="4-tab" data-toggle="tab" href="#d" role="tab" aria-controls="d" aria-selected="false">Не срочное и не важное</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">&nbsp;
+                    <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="1-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
                                 <table class="table table-hover table-md" id="tasktable">
@@ -98,7 +98,7 @@
                                         <th>Дедлайн</th>
                                         <th>Исполнитель</th>
                                         <th>Статус</th>
-                                        <th></th>
+                                        <th>Удалить</th>
                                     </tr>
                                     </thead>
                                     <tbody id="tasktable">
@@ -125,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">&nbsp;
+                    <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="2-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
                                 <table class="table table-hover table-md" id="tasktable">
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">&nbsp;
+                    <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="3-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
                                 <table class="table table-hover table-md" id="tasktable">
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="deyatel" role="tabpanel" aria-labelledby="deyatel-tab">&nbsp;
+                    <div class="tab-pane fade" id="d" role="tabpanel" aria-labelledby="4-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
                                 <table class="table table-hover table-md" id="tasktable">
@@ -242,7 +242,7 @@
                                     </c:forEach>
                                     </tbody>
                                 </table>
-                                <!-- Горячий поиск по задачам -->
+                                <!-- Search -->
                                 <script>
                                     $(document).ready(function(){
                                         $("#searchInput").on("keyup", function() {
