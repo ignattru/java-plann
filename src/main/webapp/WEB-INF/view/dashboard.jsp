@@ -102,7 +102,7 @@
                                     </tr>
                                     </thead>
                                     <tbody id="tasktable">
-                                    <c:forEach var="task" items="${allTask}">
+                                    <c:forEach var="task" items="${allTaskTab1}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
                                         </c:url>
@@ -142,7 +142,7 @@
                                         </tr>
                                     </thead>
                                     <tbody id="tasktable">
-                                    <c:forEach var="task" items="${allTask}">
+                                    <c:forEach var="task" items="${allTaskTab2}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
                                         </c:url>
@@ -182,7 +182,7 @@
                                     </tr>
                                     </thead>
                                     <tbody id="tasktable">
-                                    <c:forEach var="task" items="${allTask}">
+                                    <c:forEach var="task" items="${allTaskTab3}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
                                         </c:url>
@@ -222,7 +222,7 @@
                                     </tr>
                                     </thead>
                                     <tbody id="tasktable">
-                                    <c:forEach var="task" items="${allTask}">
+                                    <c:forEach var="task" items="${allTaskTab4}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
                                         </c:url>

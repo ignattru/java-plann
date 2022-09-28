@@ -18,10 +18,18 @@ public class AppController {
 
     @RequestMapping("/")
     public String showAllTask(Model model){
-        List<Task> allTask = taskService.getAllTask();
-        model.addAttribute("allTask", allTask);
+        List<Task> allTaskTab1 = taskService.getAllTaskTab1();
+        model.addAttribute("allTaskTab1", allTaskTab1);
+        List<Task> allTaskTab2 = taskService.getAllTaskTab2();
+        model.addAttribute("allTaskTab2", allTaskTab2);
+        List<Task> allTaskTab3 = taskService.getAllTaskTab3();
+        model.addAttribute("allTaskTab3", allTaskTab3);
+        List<Task> allTaskTab4 = taskService.getAllTaskTab4();
+        model.addAttribute("allTaskTab4", allTaskTab4);
         return "dashboard";
     }
+
+
 
     @RequestMapping("/saveTask")
     public String saveTask(@ModelAttribute("task") Task task) {
