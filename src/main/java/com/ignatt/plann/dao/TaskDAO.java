@@ -4,13 +4,8 @@ import com.ignatt.plann.entity.Task;
 import java.util.List;
 
 public interface TaskDAO {
-    public List<Task> getAllTaskTab1();
 
-    public List<Task> getAllTaskTab2();
-
-    public List<Task> getAllTaskTab3();
-
-    public List<Task> getAllTaskTab4();
+    public List<Task> getAllTask(int important);
 
     public void saveTask(Task task);
 

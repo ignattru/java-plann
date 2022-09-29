@@ -17,28 +17,26 @@ public class AppController {
     private TaskService taskService;
 
     @RequestMapping("/")
-    public String showAllTask(Model model){
-        List<Task> allTaskTab1 = taskService.getAllTaskTab1();
-        model.addAttribute("allTaskTab1", allTaskTab1);
-        List<Task> allTaskTab2 = taskService.getAllTaskTab2();
-        model.addAttribute("allTaskTab2", allTaskTab2);
-        List<Task> allTaskTab3 = taskService.getAllTaskTab3();
-        model.addAttribute("allTaskTab3", allTaskTab3);
-        List<Task> allTaskTab4 = taskService.getAllTaskTab4();
+    public String showAllTask(Model model) {
+        List<Task> allTaskTab1 = taskService.getAllTask(1);
+            model.addAttribute("allTaskTab1", allTaskTab1);
+        List<Task> allTaskTab2 = taskService.getAllTask(2);
+            model.addAttribute("allTaskTab2", allTaskTab2);
+        List<Task> allTaskTab3 = taskService.getAllTask(3);
+            model.addAttribute("allTaskTab3", allTaskTab3);
+        List<Task> allTaskTab4 = taskService.getAllTask(4);
         model.addAttribute("allTaskTab4", allTaskTab4);
         return "dashboard";
     }
 
-
-
     @RequestMapping("/saveTask")
-    public String saveTask(@ModelAttribute("task") Task task) {
+    public String saveTask (@ModelAttribute("task") Task task){
         taskService.saveTask(task);
         return "redirect:/";
     }
 
     @RequestMapping("/updateInfo")
-    public String updateTask(@RequestParam("taskId") int id, Model model){
+    public String updateTask ( @RequestParam("taskId") int id, Model model){
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);
         return "task-new";
@@ -46,14 +44,14 @@ public class AppController {
     }
 
     @RequestMapping("/addNewTask")
-    public String addNewEmployee(Model model) {
+    public String addNewEmployee (Model model){
         Task task = new Task();
         model.addAttribute("task", task);
         return "task-new";
     }
 
     @RequestMapping("/deleteTask")
-    public String deleteTask(@RequestParam("taskId") int id) {
+    public String deleteTask ( @RequestParam("taskId") int id){
         taskService.deleteTask(id);
         return "redirect:/";
     }

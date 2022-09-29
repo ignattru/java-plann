@@ -12,7 +12,7 @@ public class Api {
 
     @Autowired
     private TaskService taskService;
-
+    /*
     @GetMapping("/tasklist_tab1")
     public List<Task>showAllTaskTab1(){
         List<Task> allTaskTab1 = taskService.getAllTaskTab1();
@@ -36,7 +36,7 @@ public class Api {
         List<Task> allTaskTab4 = taskService.getAllTaskTab4();
         return allTaskTab4;
     }
-
+*/
 
 
 
