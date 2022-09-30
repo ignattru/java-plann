@@ -12,33 +12,12 @@ public class Api {
 
     @Autowired
     private TaskService taskService;
-    /*
-    @GetMapping("/tasklist_tab1")
-    public List<Task>showAllTaskTab1(){
-        List<Task> allTaskTab1 = taskService.getAllTaskTab1();
-        return allTaskTab1;
+
+    @GetMapping("/tasklist/{important}")
+    public List<Task>showAllTaskTab(@PathVariable int important){
+        List<Task> allTask = taskService.getAllTask(important);
+        return allTask;
     }
-
-    @GetMapping("/tasklist_tab2")
-    public List<Task>showAllTaskTab2(){
-        List<Task> allTaskTab2 = taskService.getAllTaskTab2();
-        return allTaskTab2;
-    }
-
-    @GetMapping("/tasklist_tab3")
-    public List<Task>showAllTaskTab3(){
-        List<Task> allTaskTab3 = taskService.getAllTaskTab3();
-        return allTaskTab3;
-    }
-
-    @GetMapping("/tasklist_tab4")
-    public List<Task>showAllTaskTab4(){
-        List<Task> allTaskTab4 = taskService.getAllTaskTab4();
-        return allTaskTab4;
-    }
-*/
-
-
 
     @GetMapping("/task/{id}")
     public Task getTask(@PathVariable int id){
