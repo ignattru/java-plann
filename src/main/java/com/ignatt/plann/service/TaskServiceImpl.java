@@ -20,6 +20,13 @@ public class TaskServiceImpl implements TaskService{
 
     @Override
     @Transactional
+    public List<Task> getAllTasks() {
+        return taskDAO.getAllTasks();
+    }
+
+
+    @Override
+    @Transactional
     public void saveTask(Task task) {
         taskDAO.saveTask(task);
     }

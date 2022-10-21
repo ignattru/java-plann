@@ -19,6 +19,12 @@ public class Api {
         return allTask;
     }
 
+    @GetMapping("/tasklist")
+    public List<Task>showAllTaskTab(){
+        List<Task> allTask = taskService.getAllTasks();
+        return allTask;
+    }
+
     @GetMapping("/task/{id}")
     public Task getTask(@PathVariable int id){
         Task task = taskService.getTask(id);
