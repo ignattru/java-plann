@@ -17,6 +17,13 @@ body{
 input{
   caret-color: #7556f3;
 }
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    font-weight: 600;
+    color: #7556f3;
+}
 
 .preloader__image {
   position: relative;

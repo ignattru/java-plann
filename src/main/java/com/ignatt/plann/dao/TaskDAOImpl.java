@@ -41,5 +41,5 @@ public class TaskDAOImpl implements TaskDAO {
         Query<Task> query = session.createQuery("delete from Task " + "where id=:taskId");
         query.setParameter("taskId", id);
         query.executeUpdate();
-}
+    }
 }
