@@ -21,9 +21,6 @@
     <a href="./" class="btn btn-default navbar-btn" role="button">Закрыть</a>
 </div>
 <div class="container" style="background-color:#fbfbfb";>
-    <h1 style="text-align: center">
-        <small>Создать задачу</small>
-    </h1>
     <form:form action="saveTask" modelAttribute="task">
         <form:hidden path="id"/>
         <div class="form-row">
@@ -110,7 +107,7 @@
     </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <button type="submit" class="btn btn-warning" style="background-color: #7556f3; border-color: #bdadff; color: #fff;">Создать</button>
+                <button type="submit" class="btn btn-warning" style="background-color: #7556f3; border-color: #bdadff; color: #fff;">Сохранить</button>
             </div>
         </div>
     </form:form>
