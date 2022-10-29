@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Arciform;
+    src: url("/resources/fonts/arciform.otf") format("opentype");
+}
+
+
 body{
   background-color: #f2f2f2;
 }
@@ -237,6 +243,7 @@ p {
 }
  
 .card-body, small, .card-title, h5, .card-text{
-  color: #fff;
+    color: #fff;
+    font-family: Arciform;
 }
 

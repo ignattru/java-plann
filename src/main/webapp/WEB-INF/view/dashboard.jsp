@@ -17,7 +17,7 @@
 <body style="background-color:#ebebeb;" >
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #7556f3">
     <a class="navbar-brand" href="/">
-        <img src="<c:url value="/resources/img/logo.svg" />" width="45" height="35" class="d-inline-block align-top" alt="">
+        <img src="<c:url value="/resources/img/logo.svg" />" width="65" height="45" class="d-inline-block align-top" alt="">
     </a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,8 +58,8 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">Планн</h5>
-                    <p class="card-text">Планн - простой и быстрый трекер задач для малого бизнеса и личного использования, построенный на принципах матрицы Эйзенхауэра. Создавайте задачи, стройте вектора развития, формируйте полезные привычки и управляйте дизайном своей жизни</p>
+                    <h5 class="card-title">Plann</h5>
+                    <p class="card-text">Простой и быстрый трекер задач для малого бизнеса и личного использования, построенный на принципах матрицы Эйзенхауэра. Создавайте задачи, стройте вектора развития, формируйте полезные привычки и управляйте дизайном своей жизни</p>
                     <p class="card-text"><small>Документация</small></p>
                 </div>
             </div>
