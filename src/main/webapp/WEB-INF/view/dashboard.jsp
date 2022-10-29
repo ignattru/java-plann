@@ -50,16 +50,17 @@
         </form>
     </div>
 </nav>
-<div class="container-fluid" style="background-color: #7556f3; height: 26em;  padding-top: 80px;">
+<div class="container-fluid" style="background-color: #7556f3; height: 19em;  padding-top: 5em;">
     <div class="card mb-3" style="max-width: 540px; border: none;">
         <div class="row no-gutters" style="background-color: #7556f3;clip-path: none;">
             <div class="col-md-4">
-                <img src="<c:url value="/resources/img/abcd_small_w.png" />" class="card-img" alt="...">
+                <img src="<c:url value="/resources/img/logo.svg" />" style="height: 70%; width: 100%;"
+                      class="card-img" alt="...">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">Plann</h5>
-                    <p class="card-text">Простой и быстрый трекер задач для малого бизнеса и личного использования, построенный на принципах матрицы Эйзенхауэра. Создавайте задачи, стройте вектора развития, формируйте полезные привычки и управляйте дизайном своей жизни</p>
+                    <p class="card-text">Open-source трекер задач построенный на принципах матрицы Эйзенхауэра. С любовью к модульному пространству</p>
                     <p class="card-text"><small>Документация</small></p>
                 </div>
             </div>
