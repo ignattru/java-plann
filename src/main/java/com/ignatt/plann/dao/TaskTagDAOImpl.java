@@ -31,7 +31,7 @@ public class TaskTagDAOImpl implements TaskTagDAO{
     }
 
     @Override
-    public TaskTag getTaskTagId(int id) {
+    public TaskTag getTaskTag(int id) {
         Session session = sessionFactory.getCurrentSession();
         TaskTag taskTag = session.get(TaskTag.class, id);
         return taskTag;

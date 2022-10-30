@@ -118,6 +118,13 @@ public class Task {
         this.status = status;
     }
 
+    public int getTagId() {
+        return tagid;
+    }
+    public void setTagId(int tagid) {
+        this.tagid = tagid;
+    }
+
     public int getMakerid() {
         return makerid;
     }
@@ -194,6 +201,7 @@ public class Task {
     public TaskTag getTaskTag() {
         return taskTag;
     }
+
     public void setTaskTag(TaskTag taskTag) {
         this.taskTag = taskTag;
     }

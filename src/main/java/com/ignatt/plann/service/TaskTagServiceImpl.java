@@ -1,9 +1,7 @@
 package com.ignatt.plann.service;
 
 
-import com.ignatt.plann.dao.TaskStatusDAO;
 import com.ignatt.plann.dao.TaskTagDAO;
-import com.ignatt.plann.entity.TaskStatus;
 import com.ignatt.plann.entity.TaskTag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,7 +30,7 @@ public class TaskTagServiceImpl implements TaskTagService {
     @Override
     @Transactional
     public TaskTag getTaskTag(int id) {
-        return tasktagDAO.getTaskTagId(id);
+        return tasktagDAO.getTaskTag(id);
     }
 
     @Override

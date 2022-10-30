@@ -71,7 +71,7 @@
         </div>
     <div class="form-row">
         <div class="form-group">
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-3">
                 <label>Исполнитель:</label>
                 <spring:select path="makerid" class="form-control">
                     <spring:option value="1">Евгений Игнатуша</spring:option>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="form-group">
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-3">
                 <label>Важность</label>
                 <spring:select path="important" class="form-control">
                     <spring:option value="1">Срочно и важно</spring:option>
@@ -93,7 +93,18 @@
             </div>
         </div>
         <div class="form-group">
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-3">
+                <label>Раздел:</label>
+                <spring:select path="tagId" class="form-control">
+                    <spring:option value="1">Аналитика</spring:option>
+                    <spring:option value="2">Разработка</spring:option>
+                    <spring:option value="3">Журнал</spring:option>
+                    <spring:option value="4">Разное</spring:option>
+                </spring:select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group col-md-3">
                 <label>Статус</label>
                 <spring:select path="status" class="form-control">
                     <spring:option value="1">Открыто</spring:option>
