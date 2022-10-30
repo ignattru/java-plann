@@ -29,6 +29,9 @@ public class Task {
     @Column(name = "status")
     private int status;
 
+    @Column(name = "tagid")
+    private int tagid;
+
     @Column(name = "makerid")
     private int makerid;
 
@@ -52,15 +55,20 @@ public class Task {
     @JoinColumn(name = "status", insertable=false, updatable=false)
     private TaskStatus taskStatus;
 
+    @OneToOne
+    @JoinColumn(name = "tagid", insertable=false, updatable=false)
+    private TaskTag taskTag;
+
     public Task() {
     }
 
-    public Task(String title, String body, int important, Integer reportid, int status, int makerid, String createdate, String updatedate, String plandate, String closedate) {
+    public Task(String title, String body, int important, Integer reportid, int status, int tagid, int makerid, String createdate, String updatedate, String plandate, String closedate) {
         this.title = title;
         this.body = body;
         this.important = important;
         this.reportid = reportid;
         this.status = status;
+        this.tagid = tagid;
         this.makerid = makerid;
         this.createdate = createdate;
         this.updatedate = updatedate;
@@ -182,4 +190,12 @@ public class Task {
     public void setTaskStatus(TaskStatus taskStatus) {
         this.taskStatus = taskStatus;
     }
+
+    public TaskTag getTaskTag() {
+        return taskTag;
+    }
+    public void setTaskTag(TaskTag taskTag) {
+        this.taskTag = taskTag;
+    }
+
 }

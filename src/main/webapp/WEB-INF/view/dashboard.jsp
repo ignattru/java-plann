@@ -113,7 +113,7 @@
                                         <tr>
                                             <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                             <td>${task.id}</td>
-                                            <td><span class="badge" style="font-size: 10px; background-color: #cbbdff;">@Раздел</span><br><a href="#" onClick="window.location.href = '${updateButton}'">${task.title}</a><br><span class="badge" style="font-size: 10px; background-color: #cbbdff;">2/5</span></td>
+                                            <td><span class="badge" style="font-size: 10px; background-color: #cbbdff;">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${updateButton}'">${task.title}</a><br><span class="badge" style="font-size: 10px; background-color: #cbbdff;">2/5</span></td>
                                             <td width="110">${task.createdate}</td>
                                             <td width="110">${task.plandate}</td>
                                             <td width="110"><a href="#">${task.taskUser.fio}</a></td>
