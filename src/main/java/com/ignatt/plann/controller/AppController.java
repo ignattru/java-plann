@@ -1,7 +1,9 @@
 package com.ignatt.plann.controller;
 
 import com.ignatt.plann.entity.Task;
+import com.ignatt.plann.entity.TaskTag;
 import com.ignatt.plann.service.TaskService;
+import com.ignatt.plann.service.TaskTagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +17,8 @@ public class AppController {
 
     @Autowired
     private TaskService taskService;
+    private TaskTagService taskTagService;
+
 
     @RequestMapping("/")
     public String showAllTask(Model model) {
@@ -40,7 +44,6 @@ public class AppController {
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);
         return "task-new";
-
     }
 
     @RequestMapping("/addNewTask")

@@ -1,8 +1,6 @@
 package com.ignatt.plann.service;
 
-import com.ignatt.plann.entity.TaskStatus;
 import com.ignatt.plann.entity.TaskTag;
-
 import java.util.List;
 
 public interface TaskTagService {
