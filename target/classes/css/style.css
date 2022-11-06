@@ -1,0 +1,245 @@
+
+body{
+  background-color: #f2f2f2;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-image: linear-gradient(19deg, #7556f3 0%, #b29fff 100%);
+  z-index: 99999;
+  color: #eee;
+}
+
+input{
+  caret-color: #7556f3;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    font-weight: 600;
+    color: #7556f3;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+@keyframes preloader-rotate {
+100% {
+  transform: rotate(360deg);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.navbar {
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
+  color: 	#fff;
+}
+
+.nav {
+  padding-top: 10px;  
+}
+
+.btn-outline-warning {
+  color: #fff;
+  background-color: #957cf7;
+  border-color: #987dff;
+}
+
+
+.btn-outline-warning:hover{
+    color: #000;
+    background-color: #7556f3;
+    border-color: #8d70ff;
+}
+
+.btn-warning:hover{
+    color: #000;
+    background-color: #957cf7;
+    border-color:#b09cff; 
+}
+
+.btn-edit {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    background-color: #e9ecef;
+    border-color: #cecece;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+    
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #448aff;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #f7f7f7;
+  border-color: #dee2e6 #dee2e6 #f7f7f7;
+}
+
+.tab-content>.active {
+  display: block;
+  background-color: #f7f7f7;
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.container{
+  padding-top: 60px;
+  max-width: 1600px;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #cbbeff;
+  color: #fff;
+}
+
+.table-hover tbody a {
+  color: #0060a0;
+  border-color: rgba(0,96,160,0.15);
+  transition-property: border-bottom,border-color,background,color,fill;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.table-hover tbody tr:hover a {
+  color: #fff;
+}
+
+.table-hover tbody tr:hover a:hover {
+  color: #ecff24;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.table tr{
+  background-color: #f7f7f7;
+}
+
+.container-fluid {
+  background-color: #f7f7f7;
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #cbbeff;
+    border-color: #ccbeff;
+}
+
+.badge {
+    font-size: inherit; 
+    font-weight: inherit;
+}
+.badge-danger {
+    color: #fff;
+    background-color: #ff909b;
+}
+.badge-success {
+    color: #fff;
+    background-color: #7ab788;
+}
+
+.row {
+  background-color: #fcfcfc;
+  padding-top: 20px;
+  clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  min-height: 82%;
+}
+  
+.col-sm-9 {
+    background-color: #fcfcfc;
+    border: 1px solid #fcfcfc;
+    border-radius: 4px 4px 4px 4px;
+}
+.col-sm-3 {
+    background-color: #f7f7f7;
+    color: 	#333;
+}
+
+/*** Типографика ***/
+h1 {
+	font-family: 'Arial';
+	font-size: 35px;
+	line-height: 1;
+	color: 	#333;
+	text-transform: none;
+	font-weight: 700;
+	padding-bottom: 11px;
+}
+
+
+h2 {
+	font-family: 'Arial';
+	font-size: 21px;
+	line-height: 1;
+	color: 	#333;
+	text-transform: none;
+	font-weight: 700;
+	padding-bottom: 7px;
+	padding-top: 20px;
+}
+
+h3 {
+    font-family: 'Arial';
+	font-size: 16px;
+	line-height: 1.2;
+	color: 	#333;
+	text-transform: none;
+	font-weight: 700;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	border-bottom: 1px dotted #73746f;
+}
+
+p {
+	font-family: 'Trebuchet MS';
+	font-size: 14px;
+	line-height: 1.4;
+	color: 	#333;
+	text-transform: none;
+}
+ 
+.card-body, small, .card-title, h5, .card-text{
+    color: #fff;
+    padding-left: 0px;
+    padding-top: 5px;
+}
+

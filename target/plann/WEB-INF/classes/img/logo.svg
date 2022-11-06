@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer" display="inline">
+  <title>Layer 1</title>
+  <rect fill="#ffffff" height="120" id="svg_6" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" width="120" x="164.333335" y="84.333332"/>
+  <rect fill="#ffffff" height="120" id="svg_7" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" width="120" x="361.333335" y="84.333332"/>
+  <rect fill="#ffffff" height="120" id="svg_8" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" width="120" x="361.333335" y="281.333332"/>
+  <rect fill="#ffffff" height="120" id="svg_9" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" width="120" x="164.333335" y="281.333332"/>
+  <line fill="none" id="svg_17" stroke="#eaeaea" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="117.999999" x2="528.583329" y1="47.333331" y2="47.429913"/>
+  <line fill="none" id="svg_21" stroke="#eaeaea" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="117.621234" x2="528.871227" y1="451.046412" y2="451.142994"/>
+  <line fill="none" id="svg_22" stroke="#eaeaea" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" transform="rotate(-90 526.246 249.428)" x1="326.621383" x2="725.871369" y1="249.379763" y2="249.476345"/>
+  <line fill="none" id="svg_23" stroke="#eaeaea" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" transform="rotate(-90 120.549 248.731)" x1="-79.075762" x2="320.174223" y1="248.682746" y2="248.779328"/>
+  <line fill="none" id="svg_28" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="15" transform="rotate(-90 90.8 341.333)" x1="30.266684" x2="151.333358" y1="341.499997" y2="341.166669"/>
+  <line fill="none" id="svg_30" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="15" transform="rotate(-90 91.3334 144.467)" x1="30.800011" x2="151.866685" y1="144.633316" y2="144.299988"/>
+  <line fill="none" id="svg_31" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="15" x1="163.466678" x2="284.533351" y1="19.96664" y2="19.633312"/>
+  <line fill="none" id="svg_32" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="15" x1="360.666659" x2="481.733333" y1="19.699997" y2="19.366669"/>
+  <line fill="none" id="svg_33" stroke="#eaeaea" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" transform="rotate(-90 322 250)" x1="122.374985" x2="521.62497" y1="249.951693" y2="250.048275"/>
+  <line fill="none" id="svg_34" stroke="#eaeaea" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="118.708342" x2="529.291672" y1="243.23743" y2="243.334012"/>
+  <text fill="#7556f3" font-family="Fantasy" font-size="84" id="svg_3" stroke="#2b2b2b" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="223.5" xml:space="preserve" y="176.5">A</text>
+  <text fill="#7556f3" font-family="Fantasy" font-size="84" id="svg_4" stroke="#2b2b2b" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="421.5" xml:space="preserve" y="176.5">B</text>
+  <text fill="#7556f3" font-family="Fantasy" font-size="84" id="svg_5" stroke="#2b2b2b" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="219.5" xml:space="preserve" y="372.5">C</text>
+  <text fill="#7556f3" font-family="Fantasy" font-size="84" id="svg_10" stroke="#2b2b2b" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="421.5" xml:space="preserve" y="373.5">D</text>
+ </g>
+</svg>
