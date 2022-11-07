@@ -1,3 +1,4 @@
+-- Mysql DB
 create table if not exists closereports
 (
 	id int(10) auto_increment
