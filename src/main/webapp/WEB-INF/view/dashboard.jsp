@@ -11,6 +11,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js" ></script>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#FF8F00">
 </head>
@@ -89,7 +91,7 @@
                     <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="1-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
-                                <table class="table table-hover table-md" id="tasktable">
+                                <table class="table table-hover table-md" id="tasktable1">
                                     <thead class="thead-light">
                                     <tr>
                                         <th> </th>
@@ -102,7 +104,7 @@
                                         <th>Удалить</th>
                                     </tr>
                                     </thead>
-                                    <tbody id="tasktable">
+                                    <tbody id="tasktable1">
                                     <c:forEach var="task" items="${allTaskTab1}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
@@ -129,7 +131,7 @@
                     <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="2-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
-                                <table class="table table-hover table-md" id="tasktable">
+                                <table class="table table-hover table-md" id="tasktable2">
                                     <thead class="thead-light">
                                         <tr>
                                             <th> </th>
@@ -142,7 +144,7 @@
                                             <th>Удалить</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="tasktable">
+                                    <tbody id="tasktable2">
                                     <c:forEach var="task" items="${allTaskTab2}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
@@ -169,7 +171,7 @@
                     <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="3-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
-                                <table class="table table-hover table-md" id="tasktable">
+                                <table class="table table-hover table-md" id="tasktable3">
                                     <thead class="thead-light">
                                     <tr>
                                         <th> </th>
@@ -182,7 +184,7 @@
                                         <th>Удалить</th>
                                     </tr>
                                     </thead>
-                                    <tbody id="tasktable">
+                                    <tbody id="tasktable3">
                                     <c:forEach var="task" items="${allTaskTab3}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
@@ -209,7 +211,7 @@
                     <div class="tab-pane fade" id="d" role="tabpanel" aria-labelledby="4-tab">&nbsp;
                         <div class="container-fluid">
                             <div class="table-responsive">
-                                <table class="table table-hover table-md" id="tasktable">
+                                <table class="table table-hover table-md" id="tasktable4">
                                     <thead class="thead-light">
                                     <tr>
                                         <th> </th>
@@ -222,7 +224,7 @@
                                         <th>Удалить</th>
                                     </tr>
                                     </thead>
-                                    <tbody id="tasktable">
+                                    <tbody id="tasktable4">
                                     <c:forEach var="task" items="${allTaskTab4}">
                                         <c:url var="updateButton" value="/updateInfo">
                                             <c:param name="taskId" value="${task.id}" />
@@ -243,14 +245,50 @@
                                     </c:forEach>
                                     </tbody>
                                 </table>
-                                <!-- Search -->
+
                                 <script>
                                     $(document).ready(function(){
+                                        // Search
                                         $("#searchInput").on("keyup", function() {
                                             var value = $(this).val().toLowerCase();
-                                            $("#tasktable tr").filter(function() {
+                                            $("#tasktable1 tr").filter(function() {
                                                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                                             });
+                                            $("#tasktable2 tr").filter(function() {
+                                                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                            });
+                                            $("#tasktable3 tr").filter(function() {
+                                                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                            });
+                                            $("#tasktable4 tr").filter(function() {
+                                                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                            });
+                                        });
+
+                                        // Sort
+                                        $('#tasktable1',).DataTable({
+                                            order: [[3, 'desc']],
+                                            paging: false,
+                                            info: false,
+                                            searching: false,
+                                        });
+                                        $('#tasktable2').DataTable({
+                                            order: [[3, 'desc']],
+                                            paging: false,
+                                            info: false,
+                                            searching: false,
+                                        });
+                                        $('#tasktable3').DataTable({
+                                            order: [[3, 'desc']],
+                                            paging: false,
+                                            info: false,
+                                            searching: false,
+                                        });
+                                        $('#tasktable4').DataTable({
+                                            order: [[3, 'desc']],
+                                            paging: false,
+                                            info: false,
+                                            searching: false,
                                         });
                                     });
                                 </script>
