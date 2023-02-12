@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Warexpl">
+    <output-path>$PROJECT_DIR$/target/plann</output-path>
+    <root id="root" />
+  </artifact>
+</component>
