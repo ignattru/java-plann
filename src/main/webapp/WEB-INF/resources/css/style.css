@@ -237,9 +237,26 @@ p {
 	text-transform: none;
 }
  
-.card-body, small, .card-title, h5, .card-text{
+.card-body, small, .card-title, h5, .card-text {
     color: #fff;
     padding-left: 0px;
     padding-top: 5px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fcf6ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7556f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cbbeff;
+}
+
 
