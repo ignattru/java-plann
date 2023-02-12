@@ -112,6 +112,7 @@
                     <spring:option value="3">На проверке</spring:option>
                     <spring:option value="4">Выполнено</spring:option>
                     <spring:option value="5">Отложено</spring:option>
+                    <spring:option value="6">Удалено</spring:option>
                 </spring:select>
             </div>
         </div>
