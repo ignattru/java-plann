@@ -17,7 +17,7 @@ public class TaskDAOImpl implements TaskDAO {
     @Override
     public List<Task> getAllTask(int important) {
         Session session = sessionFactory.getCurrentSession();
-        Query<Task>query = session.createQuery("from Task where important = " + important, Task.class);
+        Query<Task>query = session.createQuery("from Task where important = " + important + "and status !=" + 6, Task.class);
         List<Task> allTask = query.getResultList();
         return allTask;
     }
