@@ -62,7 +62,7 @@
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">Plann</h5>
-                    <p class="card-text">Open-source трекер задач построенный на принципах матрицы Эйзенхауэра. С любовью к модульному пространству</p>
+                    <p class="card-text">Open-source трекер задач с Rest-api построенный на принципах матрицы Эйзенхауэра и модульных сеток.</p>
                     <p class="card-text"><small>Документация</small></p>
                 </div>
             </div>
@@ -268,27 +268,35 @@
                                         // Sort
                                         $('#tasktable1',).DataTable({
                                             order: [[3, 'desc']],
-                                            paging: false,
+                                            paging: true,
                                             info: false,
                                             searching: false,
+                                            scrollY: '600px',
+                                            scrollCollapse: true,
                                         });
                                         $('#tasktable2').DataTable({
                                             order: [[3, 'desc']],
-                                            paging: false,
+                                            paging: true,
                                             info: false,
                                             searching: false,
+                                            scrollY: '600px',
+                                            scrollCollapse: true,
                                         });
                                         $('#tasktable3').DataTable({
                                             order: [[3, 'desc']],
-                                            paging: false,
+                                            paging: true,
                                             info: false,
                                             searching: false,
+                                            scrollY: '600px',
+                                            scrollCollapse: true,
                                         });
                                         $('#tasktable4').DataTable({
                                             order: [[3, 'desc']],
-                                            paging: false,
+                                            paging: true,
                                             info: false,
                                             searching: false,
+                                            scrollY: '600px',
+                                            scrollCollapse: true,
                                         });
                                     });
                                 </script>
