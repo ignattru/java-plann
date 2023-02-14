@@ -265,32 +265,8 @@
                                             });
                                         });
 
-                                        // Sort
-                                        $('#tasktable1',).DataTable({
-                                            order: [[3, 'desc']],
-                                            paging: true,
-                                            info: false,
-                                            searching: false,
-                                            scrollY: '600px',
-                                            scrollCollapse: true,
-                                        });
-                                        $('#tasktable2').DataTable({
-                                            order: [[3, 'desc']],
-                                            paging: true,
-                                            info: false,
-                                            searching: false,
-                                            scrollY: '600px',
-                                            scrollCollapse: true,
-                                        });
-                                        $('#tasktable3').DataTable({
-                                            order: [[3, 'desc']],
-                                            paging: true,
-                                            info: false,
-                                            searching: false,
-                                            scrollY: '600px',
-                                            scrollCollapse: true,
-                                        });
-                                        $('#tasktable4').DataTable({
+                                        // Sort on all tables hover by class
+                                        $('table.table-hover',).DataTable({
                                             order: [[3, 'desc']],
                                             paging: true,
                                             info: false,
