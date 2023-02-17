@@ -273,6 +273,8 @@
                                             searching: false,
                                             scrollY: '600px',
                                             scrollCollapse: true,
+                                            stateSave: true,
+                                            pagingType: 'numbers',
                                         });
                                     });
                                 </script>
