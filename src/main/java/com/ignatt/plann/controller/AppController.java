@@ -29,7 +29,19 @@ public class AppController {
         List<Task> allTaskTab3 = taskService.getAllTask(3);
             model.addAttribute("allTaskTab3", allTaskTab3);
         List<Task> allTaskTab4 = taskService.getAllTask(4);
-        model.addAttribute("allTaskTab4", allTaskTab4);
+            model.addAttribute("allTaskTab4", allTaskTab4);
+
+        int countTaskTab1 = taskService.getCountTask(1);
+        model.addAttribute("countTaskTab1", countTaskTab1);
+
+        int countTaskTab2 = taskService.getCountTask(2);
+        model.addAttribute("countTaskTab2", countTaskTab2);
+
+        int countTaskTab3 = taskService.getCountTask(3);
+        model.addAttribute("countTaskTab3", countTaskTab3);
+
+        int countTaskTab4 = taskService.getCountTask(4);
+        model.addAttribute("countTaskTab4",countTaskTab4);
         return "dashboard";
     }
 

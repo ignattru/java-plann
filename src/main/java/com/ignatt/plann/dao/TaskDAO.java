@@ -7,6 +7,8 @@ public interface TaskDAO {
 
     public List<Task> getAllTask(int important);
 
+    public int getCountTask(int important);
+
     public List<Task> getAllTasks();
 
     public void saveTask(Task task);

@@ -266,13 +266,17 @@
 
                 // Chart for tasks
                 const ctx = document.getElementById('TaskChart');
+                let dataTab1 = ${countTaskTab1};
+                let dataTab2 = ${countTaskTab2};;
+                let dataTab3 = ${countTaskTab3};;
+                let dataTab4 = ${countTaskTab4};;
                 new Chart(ctx, {
                     type: 'doughnut',
                     data: {
                         labels: ['Срочное важное', 'Срочное не важное', 'Не срочное важное', 'Не срочное не важное'],
                         datasets: [{
                             label: 'Количество задач',
-                            data: [12, 6, 3, 2],
+                            data: [dataTab1, dataTab2, dataTab3, dataTab4],
                             backgroundColor: [
                                 'rgba(98,0,238,0.61)',
                                 'rgba(117,86,243,0.6)',
