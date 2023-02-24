@@ -319,7 +319,17 @@
                             "last": "Последняя"
                         }
                     },
-                    order: [[3, 'desc']],
+                    "order": [[ 3, "desc" ]],
+                    "columns": [
+                        {"orderable": false },
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        {"orderable": false }
+                    ],
                     paging: true,
                     info: true,
                     searching: false,
