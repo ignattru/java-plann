@@ -256,14 +256,44 @@
                     <p>Сегодня рабочий день до 15.00. Всех просим не задерживаться и закупиться подарками к субботе. Отдельная благодарность Дмитрию и Олегу за организацию праздника</p>
                     <p>Не забудьте подготовить рабочие места к новому году, выключить приборы электропитания и закрыть шкафы</p>
                     <hr />
-                    <p>Тут будет график созданных задач:</p>
-                    <canvas id="Chart1" ></canvas>
+                    <canvas id="TaskChart" ></canvas>
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
             $(document).ready(function(){
-                // Search
+
+                // Chart for tasks
+                const ctx = document.getElementById('TaskChart');
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Срочное важное', 'Срочное не важное', 'Не срочное важное', 'Не срочное не важное'],
+                        datasets: [{
+                            label: 'Количество задач',
+                            data: [12, 6, 3, 2],
+                            backgroundColor: [
+                                'rgba(98,0,238,0.61)',
+                                'rgba(117,86,243,0.6)',
+                                'rgba(3,218,198,0.61)',
+                                'rgba(1,135,134,0.61)'
+                            ],
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+
+                    }
+                    }
+                });
+
+                // Search by class tables in all tabs
                 $("#searchInput").on("keyup", function() {
                     var value = $(this).val().toLowerCase();
                     $('table.table-hover tbody tr').filter(function() {
@@ -275,7 +305,7 @@
                 $('table.table-hover',).DataTable({
                     order: [[3, 'desc']],
                     paging: true,
-                    info: false,
+                    info: true,
                     searching: false,
                     scrollY: '600px',
                     scrollCollapse: true,
