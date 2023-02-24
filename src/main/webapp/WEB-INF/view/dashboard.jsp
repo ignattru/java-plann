@@ -307,14 +307,27 @@
 
                 // Sort on all tables hover by class
                 $('table.table-hover',).DataTable({
+                    "language": {
+                        "lengthMenu": "Показать _MENU_ записей",
+                        "zeroRecords": "Записей не найдено",
+                        "info": "Показана страница _PAGE_ из _PAGES_",
+                        "infoEmpty": "Записи с 0 до 0 из 0 записей",
+                        "paginate": {
+                            "first": "Первая",
+                            "previous": "Предыдущая",
+                            "next": "Следующая",
+                            "last": "Последняя"
+                        }
+                    },
                     order: [[3, 'desc']],
                     paging: true,
                     info: true,
                     searching: false,
                     scrollY: '600px',
+                    scrollX: false,
                     scrollCollapse: true,
                     stateSave: true,
-                    pagingType: 'numbers',
+                    pagingType: 'simple_numbers',
                 });
             });
         </script>
