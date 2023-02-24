@@ -96,12 +96,12 @@
                                             <tr>
                                                 <th> </th>
                                                 <th>№</th>
-                                                <th>Задача</th>
+                                                <th>Описание задачи</th>
                                                 <th>Создано</th>
                                                 <th>Дедлайн</th>
                                                 <th>Исполнитель</th>
                                                 <th>Статус</th>
-                                                <th>Удалить</th>
+                                                <th> </th>
                                             </tr>
                                             </thead>
                                             <tbody id="tasktable1">
@@ -136,12 +136,12 @@
                                                 <tr>
                                                     <th> </th>
                                                     <th>№</th>
-                                                    <th>Задача</th>
+                                                    <th>Описание задачи</th>
                                                     <th>Создано</th>
                                                     <th>Дедлайн</th>
                                                     <th>Исполнитель</th>
                                                     <th>Статус</th>
-                                                    <th>Удалить</th>
+                                                    <th> </th>
                                                 </tr>
                                             </thead>
                                             <tbody id="tasktable2">
@@ -176,12 +176,12 @@
                                             <tr>
                                                 <th> </th>
                                                 <th>№</th>
-                                                <th>Задача</th>
+                                                <th>Описание задачи</th>
                                                 <th>Создано</th>
                                                 <th>Дедлайн</th>
                                                 <th>Исполнитель</th>
                                                 <th>Статус</th>
-                                                <th>Удалить</th>
+                                                <th> </th>
                                             </tr>
                                             </thead>
                                             <tbody id="tasktable3">
@@ -216,12 +216,12 @@
                                             <tr>
                                                 <th> </th>
                                                 <th>№</th>
-                                                <th>Задача</th>
+                                                <th>Описание задачи</th>
                                                 <th>Создано</th>
                                                 <th>Дедлайн</th>
                                                 <th>Исполнитель</th>
                                                 <th>Статус</th>
-                                                <th>Удалить</th>
+                                                <th> </th>
                                             </tr>
                                             </thead>
                                             <tbody id="tasktable4">

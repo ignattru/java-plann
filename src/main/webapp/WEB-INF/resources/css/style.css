@@ -156,9 +156,10 @@ input{
 }
 
 .table .thead-light th {
-    color: #495057;
-    background-color: #cbbeff;
-    border-color: #ccbeff;
+    color: #fcfcfc;
+    background-color: #7556f3;
+    border-color: #7556f3;
+    padding: 15px;
 }
 
 .badge {
