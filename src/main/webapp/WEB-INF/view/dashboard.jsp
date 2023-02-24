@@ -267,9 +267,9 @@
                 // Chart for tasks
                 const ctx = document.getElementById('TaskChart');
                 let dataTab1 = ${countTaskTab1};
-                let dataTab2 = ${countTaskTab2};;
-                let dataTab3 = ${countTaskTab3};;
-                let dataTab4 = ${countTaskTab4};;
+                let dataTab2 = ${countTaskTab2};
+                let dataTab3 = ${countTaskTab3};
+                let dataTab4 = ${countTaskTab4};
                 new Chart(ctx, {
                     type: 'doughnut',
                     data: {
