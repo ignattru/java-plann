@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ page language="java" pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +12,9 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
         <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js" ></script>
+        <script src="<c:url value="/resources/js/calendar.js" />" defer></script>
         <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="theme-color" content="#FF8F00">
     </head>
@@ -256,7 +258,33 @@
                     <p>Сегодня рабочий день до 15.00. Всех просим не задерживаться и закупиться подарками к субботе. Отдельная благодарность Дмитрию и Олегу за организацию праздника</p>
                     <p>Не забудьте подготовить рабочие места к новому году, выключить приборы электропитания и закрыть шкафы</p>
                     <hr />
+                    <!-- Calendar -->
+                    <div class="wrapper">
+                         <header>
+                            <p class="current-date"></p>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                <span id="next" class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                        </header>
+                        <div class="calendar">
+                            <ul class="weeks">
+                                <li>Пн</li>
+                                <li>Вт</li>
+                                <li>Ср</li>
+                                <li>Чт</li>
+                                <li>Пт</li>
+                                <li>Сб</li>
+                                <li>Вс</li>
+                            </ul>
+                            <ul class="days"></ul>
+                        </div>
+                    </div>
+                    <!-- Calendar end -->
                     <canvas id="TaskChart" ></canvas>
+
+
+
                 </div>
             </div>
         </div>
@@ -278,10 +306,7 @@
                             label: 'Количество задач',
                             data: [dataTab1, dataTab2, dataTab3, dataTab4],
                             backgroundColor: [
-                                'rgba(98,0,238,0.61)',
-                                'rgba(117,86,243,0.6)',
-                                'rgba(3,218,198,0.61)',
-                                'rgba(1,135,134,0.61)'
+                                'rgba(98,0,238,0.61)', 'rgba(117,86,243,0.6)', 'rgba(3,218,198,0.61)', 'rgba(1,135,134,0.61)'
                             ],
                             borderWidth: 3
                         }]
@@ -290,7 +315,7 @@
                         responsive: true,
                         plugins: {
                             legend: {
-                                position: 'top',
+                                position: 'none',
                             },
 
                     }
@@ -333,7 +358,7 @@
                     paging: true,
                     info: true,
                     searching: false,
-                    scrollY: '600px',
+                    scrollY: '1000px',
                     scrollX: false,
                     scrollCollapse: true,
                     stateSave: true,
