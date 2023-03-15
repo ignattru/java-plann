@@ -1,5 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
         <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js" ></script>
         <script src="<c:url value="/resources/js/calendar.js" />" defer></script>
-        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="theme-color" content="#FF8F00">
     </head>
     <body style="background-color:#ebebeb;" >

@@ -22,6 +22,7 @@ public class AppController {
 
     @RequestMapping("/")
     public String showAllTask(Model model) {
+
         List<Task> allTaskTab1 = taskService.getAllTask(1);
             model.addAttribute("allTaskTab1", allTaskTab1);
         List<Task> allTaskTab2 = taskService.getAllTask(2);

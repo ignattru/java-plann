@@ -15,17 +15,17 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <context:component-scan base-package="com.ignatt.plann" />
-
     <mvc:annotation-driven/>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/" />
         <property name="suffix" value=".jsp" />
     </bean>
 
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
-          destroy-method="close">
+          destroy-method="close" >
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.45:3306/meetdatedemo?useSSL=false&amp;serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.45:3306/meetdatedemo?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
         <property name="user" value="root" />
         <property name="password" value="268HbcjFh[b{bhe" />
     </bean>
@@ -47,7 +47,6 @@
     </bean>
     <mvc:resources mapping="/resources/**" location="WEB-INF/resources/" />
     <tx:annotation-driven transaction-manager="transactionManager" />
-
 
 </beans>
 
