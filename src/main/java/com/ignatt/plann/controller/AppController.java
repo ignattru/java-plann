@@ -1,7 +1,6 @@
 package com.ignatt.plann.controller;
 
 import com.ignatt.plann.entity.Task;
-import com.ignatt.plann.entity.TaskTag;
 import com.ignatt.plann.service.TaskService;
 import com.ignatt.plann.service.TaskTagService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,6 @@ public class AppController {
     @Autowired
     private TaskService taskService;
     private TaskTagService taskTagService;
-
 
     @RequestMapping("/")
     public String showAllTask(Model model) {
@@ -46,29 +44,47 @@ public class AppController {
         return "dashboard";
     }
 
+    // Create task
+    @RequestMapping("/addNewTask")
+    public String addNewEmployee (Model model){
+        Task task = new Task();
+        model.addAttribute("task", task);
+        return "task-edit";
+    }
+
+    // Read task
+    @RequestMapping("/veiwTask")
+    public String viewTask ( @RequestParam("taskId") int id, Model model){
+        Task task = taskService.getTask(id);
+        model.addAttribute("task", task);
+        return "task-view";
+    }
+
+    // Update task
+    @RequestMapping("/updateInfo")
+    public String updateTask ( @RequestParam("taskId") int id, Model model){
+        Task task = taskService.getTask(id);
+        model.addAttribute("task", task);
+        return "task-edit";
+    }
+
+    // Delete task
+    @RequestMapping("/deleteTask")
+    public String deleteTask ( @RequestParam("taskId") int id){
+        taskService.deleteTask(id);
+        return "redirect:/";
+    }
+
+    // Save task
     @RequestMapping("/saveTask")
     public String saveTask (@ModelAttribute("task") Task task){
         taskService.saveTask(task);
         return "redirect:/";
     }
 
-    @RequestMapping("/updateInfo")
-    public String updateTask ( @RequestParam("taskId") int id, Model model){
-        Task task = taskService.getTask(id);
-        model.addAttribute("task", task);
-        return "task-new";
-    }
 
-    @RequestMapping("/addNewTask")
-    public String addNewEmployee (Model model){
-        Task task = new Task();
-        model.addAttribute("task", task);
-        return "task-new";
-    }
 
-    @RequestMapping("/deleteTask")
-    public String deleteTask ( @RequestParam("taskId") int id){
-        taskService.deleteTask(id);
-        return "redirect:/";
-    }
+
+
+
 }

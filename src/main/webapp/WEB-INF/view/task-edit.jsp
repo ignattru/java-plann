@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Планн | Новая задача</title>
+    <title>Планн | Редактирование задачи</title>
     <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css" />" />
     <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap-datetimepicker.min.css" />" />
     <link rel="shortcut icon" href="<c:url value="/resources/img/favicon.ico" />" type="image/x-icon">
