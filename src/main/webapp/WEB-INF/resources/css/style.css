@@ -79,7 +79,7 @@ input{
 
 .btn-warning:hover{
     color: #000;
-    background-color: #957cf7;
+    background-color: #f3f7f5;
     border-color:#b09cff; 
 }
 
@@ -245,6 +245,22 @@ p {
     padding-left: 0px;
     padding-top: 5px;
 }
+
+.card-comment {
+    width: 18rem;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    background-color: #f7f7f7;
+}
+.card-body-comment {
+}
+.card-title-comment {
+    color: #000;
+}
+.card-text-comment {
+    color: #000;
+}
+
 
 ::-webkit-scrollbar {
     width: 5px;
