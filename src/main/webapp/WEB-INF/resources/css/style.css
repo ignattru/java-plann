@@ -70,7 +70,6 @@ input{
   border-color: #987dff;
 }
 
-
 .btn-outline-warning:hover{
     color: #000;
     background-color: #7556f3;
@@ -177,6 +176,10 @@ input{
     background-color: #7ab788;
 }
 
+.badge text-bg-dark {
+    font-size: 10px;
+}
+
 .row {
   background-color: #fcfcfc;
   padding-top: 20px;
@@ -207,7 +210,6 @@ h1 {
 	font-weight: 700;
 	padding-bottom: 11px;
 }
-
 
 h2 {
 	font-family: 'Arial';
@@ -247,20 +249,22 @@ p {
 }
 
 .card-comment {
-    width: 18rem;
+    width: 35rem;
     padding-left: 0rem;
-    padding-top: 2rem;
-    background-color: #f7f7f7;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
 .card-body-comment {
 }
+
 .card-title-comment {
     color: #000;
 }
+
 .card-text-comment {
     color: #000;
 }
-
 
 ::-webkit-scrollbar {
     width: 5px;
