@@ -32,42 +32,40 @@
                     <div class="col-sm-9" style="background-color: #ebebeb;">
                         <div class="card-comment">
                             <div class="card-body-comment">
-                                <span class="badge rounded-pill text-bg-dark">@Разработчик</span>
-                                <h5 class="card-title-comment">Антон Деплоев</h5>
+                                <span class="badge rounded-pill text-bg-dark">@Разработчик</span><h5 class="card-title-comment">Антон Деплоев</h5>
                                 <p>Вопрос на повестку: Надо бы задеплоить все что не задеплоено.</p>
                                 <p>Есть над чем задуматься: реплицированные с зарубежных источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
-                                <button type="button" class="btn btn-dark position-relative">Обсудить<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span></button>
+                                <button class="btn btn-dark position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Раскрыть тред<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+                                </button>
                                 <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Раскрыть тред
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-
-
-                                            <div class="card-comment">
-                                                <div class="card-body-comment">
-                                                    <span class="badge rounded-pill text-bg-dark">@Разработчик</span>
-                                                    <h5 class="card-title-comment">Виктор Фронтендов:</h5>
-                                                    <p>Это что за говно код!</p>
-                                                    <p>Полная лажа источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
+                                    <div class="accordion-item" style="background-color: inherit; border:none;">
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <!-- Начало комментария-->
+                                                <div class="card-comment">
+                                                    <div class="card-body-comment">
+                                                        <span class="badge rounded-pill text-bg-dark">@Разработчик</span>
+                                                        <h5 class="card-title-comment">Виктор Фронтендов:</h5>
+                                                        <p>Это что за говно код!</p>
+                                                        <p>Полная лажа источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="card-comment">
-                                                <div class="card-body-comment">
-                                                    <span class="badge rounded-pill text-bg-dark">@Аналитик</span>
-                                                    <h5 class="card-title-comment">Семен Полиморфизмович:</h5>
-                                                    <p>Реально хрень, мы такое не согласовывали!</p>
-                                                    <p>Полная лажа источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
-                                                </div>
-                                            </div>
+                                                <!-- Конец комментария -->
 
+                                                <!-- Начало комментария -->
+                                                <div class="card-comment">
+                                                    <div class="card-body-comment">
+                                                        <span class="badge rounded-pill text-bg-dark">@Аналитик</span>
+                                                        <h5 class="card-title-comment">Семен Полиморфизмович:</h5>
+                                                        <p>Реально хрень, мы такое не согласовывали!</p>
+                                                        <p>Полная лажа источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
+                                                    </div>
+                                                </div>
+                                                <!-- Конец комментария -->
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
