@@ -77,9 +77,30 @@
                     <div class="col-sm-9" style="background-color: #ebebeb;">
                         <div class="card-comment">
                             <div class="card-body-comment">
-                                <h5 class="card-title-comment">Анастасия Гитхабовна<span class="badge" style="font-size: 10px; background-color: #cbbdff;">@Разработчики</span></h5>
-                                <p class="card-text-comment">Вопрос на повестку: Надо бы закоммитить все что не закоммичено.</p>
-                                <a href="#" class="btn btn-dark" role="button">Обсудить</a>
+                                <span class="badge rounded-pill text-bg-dark">@Разработчик</span><h5 class="card-title-comment">Анастасия Гитхабовна</h5>
+                                <p>Вопрос на повестку: Надо бы закоммитить все что не закоммичено.</p>
+                                <p>Есть над чем задуматься: реплицированные с зарубежных источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
+                                <button class="btn btn-dark position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Раскрыть тред<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+                                </button>
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="accordion-item" style="background-color: inherit; border:none;">
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <!-- Начало комментария-->
+                                                <div class="card-comment">
+                                                    <div class="card-body-comment">
+                                                        <span class="badge rounded-pill text-bg-dark">@Дизайнер</span>
+                                                        <h5 class="card-title-comment">Сергей Инкапсуляпович:</h5>
+                                                        <p>Это что за говно код!</p>
+                                                        <p>Полная лажа источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
+                                                    </div>
+                                                </div>
+                                                <!-- Конец комментария -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
