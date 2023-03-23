@@ -42,6 +42,11 @@
                                     <div class="accordion-item" style="background-color: inherit; border:none;">
                                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
+                                                <div class="mb-3">
+                                                    <label for="AddComment" class="form-label">Добавить комментарий</label>
+                                                    <textarea class="form-control" id="AddComment" rows="3"></textarea>
+                                                </div>
+                                                <button class="btn btn-dark position-relative" type="button">Добавить</button>
                                                 <!-- Начало комментария-->
                                                 <div class="card-comment">
                                                     <div class="card-body-comment">
@@ -87,6 +92,11 @@
                                     <div class="accordion-item" style="background-color: inherit; border:none;">
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
                                             <div class="accordion-body">
+                                                <div class="mb-3">
+                                                    <label for="AddComment" class="form-label">Добавить комментарий</label>
+                                                    <textarea class="form-control" id="AddComment" rows="3"></textarea>
+                                                </div>
+                                                <button class="btn btn-dark position-relative" type="button">Добавить</button>
                                                 <!-- Начало комментария-->
                                                 <div class="card-comment">
                                                     <div class="card-body-comment">
