@@ -122,6 +122,19 @@ input{
   max-width: 1600px;
 }
 
+.taskbody p a {
+  color: #0060a0;
+  border-color: rgba(0,96,160,0.15);
+  transition-property: border-bottom,border-color,background,color,fill;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.taskbody p a:hover {
+  color: #cbbeff;
+}
+
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: #cbbeff;
   color: #fff;

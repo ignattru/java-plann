@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-sm-9">
                     <h2>${task.title}</h2>
-                    ${task.body}
+                    <div class="taskbody">${task.body}</div>
                     <h6>Подзадачи <span class="badge rounded-pill text-bg-dark">2/3</span></h6>
                     <!-- Subtasks -->
                     <div class="form-check">
