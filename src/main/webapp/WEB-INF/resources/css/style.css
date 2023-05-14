@@ -215,6 +215,7 @@ input{
     color: 	#333;
 }
 
+
 /*** Типографика ***/
 h1 {
 	font-family: 'Arial';
@@ -223,7 +224,8 @@ h1 {
 	color: 	#333;
 	text-transform: none;
 	font-weight: 700;
-	padding-bottom: 11px;
+	padding-bottom: 1px;
+    padding-top: 0px;
 }
 
 h2 {
@@ -385,3 +387,14 @@ header .current-date{
     background: #f2f2f2;
 }
 /*end calendar*/
+
+#aboutask {
+    width: 100%; /* Ширина всей таблицы */
+}
+
+TD#option {
+    width: 40%; /* Ширина левой колонки */
+    font-weight: bold;
+}
+TD#value {
+}

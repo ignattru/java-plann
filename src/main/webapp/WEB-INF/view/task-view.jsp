@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-9">
-                    <h2>${task.title}</h2>
+                    <h1>${task.title}</h1>
                     <div class="taskbody">${task.body}</div>
                     <h6>Подзадачи <span class="badge rounded-pill text-bg-dark">2/3</span></h6>
                     <!-- Subtasks -->
@@ -36,17 +36,29 @@
                             Вторая подзадача выполненая
                         </label>
                     </div>
+
+                    <ul>
+                    <c:forEach var="task" items="${allTaskTab1}">
+                        <c:url var="viewButton" value="/viewTask">
+                            <c:param name="taskId" value="${task.id}" />
+                        </c:url>
+                            <li><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a> </li>
+                    </c:forEach>
+                    </ul>
                     <!-- End Subtasks -->
                     <h5>Обсуждение:</h5>
                 </div>
                 <div class="col-sm-3">
-                    <h2>Сайдбар</h2>
-                    <p>Дата создания: ${task.title}</p>
-                    <p>Дата последного обновления: ${task.title}</p>
-                    <p>Дедлайн: ${task.title}</p>
-                    <p>Исполнитель: ${task.title}</p>
-                    <p>Дата создания: ${task.title}</p>
-
+                    <h1>Детали задачи</h1>
+                    <table cellspacing="0" id="aboutask">
+                        <tr><td id="option">Статус:</td><td id="value">${task.taskStatus.statusname}</td></tr>
+                        <tr><td id="option">Исполнитель:</td><td id="value">${task.taskUser.fio}</td></tr>
+                        <tr><td id="option">Создано:</td><td id="value">${task.createdate}</td></tr>
+                        <tr><td id="option">Дедлайн:</td><td id="value">${task.plandate}</td></tr>
+                        <tr><td id="option">Обновлено:</td><td id="value">${task.updatedate}</td></tr>
+                        <tr><td id="option">Закрыто:</td><td id="value">${task.closedate}</td></tr>
+                        <tr><td id="option">Раздел:</td><td id="value">${task.taskTag.tagName}</td></tr>
+                    </table>
                 </div>
                 <!-- Начало треда-->
                 <div class="row">
@@ -82,7 +94,7 @@
                                                 <!-- Начало комментария -->
                                                 <div class="card-comment">
                                                     <div class="card-body-comment">
-                                                        <span class="badge rounded-pill text-bg-dark">@Аналитик</span>
+                                                        <span class="badge rounded-pill">@Аналитик</span>
                                                         <h5 class="card-title-comment">Семен Полиморфизмович:</h5>
                                                         <p>Реально хрень, мы такое не согласовывали!</p>
                                                         <p>Полная лажа источников, современные исследования объявлены нарушающими общечеловеческие нормы этики и морали. </p>
