@@ -177,8 +177,10 @@ input{
 }
 
 .badge {
-    font-size: inherit; 
-    font-weight: inherit;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: #e0d8ff;
 }
 .badge-danger {
     color: #fff;
