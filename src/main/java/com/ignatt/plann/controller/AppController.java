@@ -53,7 +53,7 @@ public class AppController {
     }
 
     // Read task
-    @RequestMapping("/veiwTask")
+    @RequestMapping("/viewTask")
     public String viewTask ( @RequestParam("taskId") int id, Model model){
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);

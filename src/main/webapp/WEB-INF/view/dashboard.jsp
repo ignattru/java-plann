@@ -108,7 +108,7 @@
                                             </thead>
                                             <tbody id="tasktable1">
                                             <c:forEach var="task" items="${allTaskTab1}">
-                                                <c:url var="veiwButton" value="/veiwTask">
+                                                <c:url var="viewButton" value="/viewTask">
                                                     <c:param name="taskId" value="${task.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
@@ -120,7 +120,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${veiwButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110"><a href="#">${task.taskUser.fio}</a></td>
@@ -151,7 +151,7 @@
                                             </thead>
                                             <tbody id="tasktable2">
                                             <c:forEach var="task" items="${allTaskTab2}">
-                                                <c:url var="veiwButton" value="/veiwTask">
+                                                <c:url var="viewButton" value="/viewTask">
                                                     <c:param name="taskId" value="${task.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
@@ -163,7 +163,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${veiwButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110"><a href="#">${task.taskUser.fio}</a></td>
@@ -194,7 +194,7 @@
                                             </thead>
                                             <tbody id="tasktable3">
                                             <c:forEach var="task" items="${allTaskTab3}">
-                                                <c:url var="veiwButton" value="/veiwTask">
+                                                <c:url var="viewButton" value="/viewTask">
                                                     <c:param name="taskId" value="${task.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
@@ -206,7 +206,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${veiwButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110"><a href="#">${task.taskUser.fio}</a></td>
@@ -237,7 +237,7 @@
                                             </thead>
                                             <tbody id="tasktable4">
                                             <c:forEach var="task" items="${allTaskTab4}">
-                                                <c:url var="veiwButton" value="/veiwTask">
+                                                <c:url var="viewButton" value="/viewTask">
                                                     <c:param name="taskId" value="${task.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
@@ -249,7 +249,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${veiwButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">2/5</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110"><a href="#">${task.taskUser.fio}</a></td>
