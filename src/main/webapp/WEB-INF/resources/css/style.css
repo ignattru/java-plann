@@ -71,13 +71,13 @@ input {
     border-color: #987dff;
 }
 
-.btn-outline-warning:hover{
+.btn-outline-warning:hover {
     color: #000;
     background-color: #7556f3;
     border-color: #8d70ff;
 }
 
-.btn-warning:hover{
+.btn-warning:hover {
     color: #000;
     background-color: #f3f7f5;
     border-color:#b09cff; 
@@ -118,7 +118,7 @@ input {
     border-bottom: 1px solid #dee2e6;
 }
 
-.container{
+.container {
     padding-top: 60px;
     max-width: 1600px;
 }
@@ -183,10 +183,12 @@ input {
     line-height: 1.4;
     background-color: #e0d8ff;
 }
+
 .badge-danger {
     color: #fff;
     background-color: #ff909b;
 }
+
 .badge-success {
     color: #fff;
     background-color: #7ab788;

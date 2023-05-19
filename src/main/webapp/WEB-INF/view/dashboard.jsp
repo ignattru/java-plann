@@ -293,10 +293,8 @@
                         </div>
                     </div>
                     <!-- Calendar end -->
+                    <h2>Количество задач</h2>
                     <canvas id="TaskChart" ></canvas>
-
-
-
                 </div>
             </div>
         </div>
