@@ -18,7 +18,7 @@
         <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="theme-color" content="#FF8F00">
     </head>
-    <body style="background-color:#ebebeb;" >
+    <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #7556f3">
             <a class="navbar-brand" href="/">
                 <img src="<c:url value="/resources/img/logo.svg" />" width="65" height="45" class="d-inline-block align-top" alt="">
