@@ -26,10 +26,15 @@ public class TaskServiceImpl implements TaskService{
 
     @Override
     @Transactional
+    public int getCountSubTask(int taskid) {
+        return taskDAO.getCountSubTask(taskid);
+    }
+
+    @Override
+    @Transactional
     public List<Task> getAllTasks() {
         return taskDAO.getAllTasks();
     }
-
 
     @Override
     @Transactional

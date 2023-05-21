@@ -40,6 +40,10 @@ public class AppController {
 
         int countTaskTab4 = taskService.getCountTask(4);
         model.addAttribute("countTaskTab4",countTaskTab4);
+
+        int countSubTask = taskService.getCountSubTask(42);
+        model.addAttribute("countSubTask",countSubTask);
+
         return "dashboard";
     }
 
