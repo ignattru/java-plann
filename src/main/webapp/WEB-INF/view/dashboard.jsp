@@ -124,7 +124,7 @@
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110">${task.taskStatus.statusname}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>
@@ -167,7 +167,7 @@
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110">${task.taskStatus.statusname}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>
@@ -210,7 +210,7 @@
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110">${task.taskStatus.statusname}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>
@@ -253,7 +253,7 @@
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110">${task.taskStatus.statusname}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>
