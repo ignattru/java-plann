@@ -11,7 +11,7 @@ public interface TaskDAO {
 
     public int getCountSubTask(int taskid);
 
-    //public int getCountSubTaskDone(int taskid);
+    public int getCountDoneSubTask(int taskid);
 
     public List<Task> getAllTasks();
 

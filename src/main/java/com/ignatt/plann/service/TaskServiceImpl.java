@@ -8,7 +8,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class TaskServiceImpl implements TaskService{
+public class TaskServiceImpl implements TaskService {
+
     @Autowired
     private TaskDAO taskDAO;
 
@@ -28,6 +29,12 @@ public class TaskServiceImpl implements TaskService{
     @Transactional
     public int getCountSubTask(int taskid) {
         return taskDAO.getCountSubTask(taskid);
+    }
+
+    @Override
+    @Transactional
+    public int getCountDoneSubTask(int taskid) {
+        return taskDAO.getCountDoneSubTask(taskid);
     }
 
     @Override

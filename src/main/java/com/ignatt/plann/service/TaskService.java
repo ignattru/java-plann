@@ -11,6 +11,8 @@ public interface TaskService {
 
     public int getCountSubTask(int taskid);
 
+    public int getCountDoneSubTask(int taskid);
+
     public List<Task> getAllTasks();
 
     public void saveTask(Task task);

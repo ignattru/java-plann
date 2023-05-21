@@ -41,7 +41,16 @@ public class TaskDAOImpl implements TaskDAO {
         return countTask.size();
     }
 
-
+    @Override
+    public int getCountDoneSubTask(int taskid) {
+        Session session = sessionFactory.getCurrentSession();
+        Query<Task> query = session.createQuery("from Task as task\n" +
+                "where task.status != 4 and task.id in (\n" +
+                "    select subtask.subtaskid from SubTask as subtask\n where subtask.taskid = taskid" +
+                ")", Task.class);
+        List<Task> countTask = query.getResultList();
+        return countTask.size();
+    }
 
     @Override
     public List<Task> getAllTasks() {

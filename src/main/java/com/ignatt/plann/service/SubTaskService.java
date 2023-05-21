@@ -5,6 +5,7 @@ import com.ignatt.plann.entity.SubTask;
 import java.util.List;
 
 public interface SubTaskService {
+
     public List<SubTask> getAllSubTasks();
 
     public void saveSubTask(SubTask subtask);
