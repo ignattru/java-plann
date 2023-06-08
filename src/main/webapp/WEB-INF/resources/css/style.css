@@ -302,6 +302,18 @@ p {
     background: #cbbeff;
 }
 
+.form-check-input {
+    width: 17px !important;
+    height: 17px !important;
+    border-radius: 1em !important;;
+}
+
+.form-check-input:checked {
+    background-color: #7556f3 !important;
+    border-color: #7556f3 !important;
+}
+
+
 /*calendar*/
 .wrapper {
     width: 100%;

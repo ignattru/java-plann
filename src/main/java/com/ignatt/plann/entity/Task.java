@@ -59,10 +59,6 @@ public class Task {
     @JoinColumn(name = "tagid", insertable=false, updatable=false)
     private TaskTag taskTag;
 
-    @OneToOne
-    @JoinColumn(name = "id", insertable=false, updatable=false)
-    private SubTask subTask;
-
     public Task() {
     }
 
