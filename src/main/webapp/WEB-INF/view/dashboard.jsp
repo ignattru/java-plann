@@ -22,16 +22,13 @@
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #7556f3">
             <a class="navbar-brand" href="/">
-                <img src="<c:url value="/resources/img/logo.svg" />" width="65" height="45" class="d-inline-block align-top" alt="">
+                <img src="<c:url value="/resources/img/logoDash.svg" />" width="65" height="45" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Планн</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Настройки</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -59,7 +56,7 @@
             <div class="card mb-3" style="max-width: 540px; border: none;">
                 <div class="row no-gutters" style="background-color: #7556f3;clip-path: none;">
                     <div class="col-md-4">
-                        <img src="<c:url value="/resources/img/logo.svg" />" style="height: 70%; width: 100%;"
+                        <img src="<c:url value="/resources/img/logoDash.svg" />" style="height: 70%; width: 100%;"
                               class="card-img" alt="...">
                     </div>
                     <div class="col-md-8">
