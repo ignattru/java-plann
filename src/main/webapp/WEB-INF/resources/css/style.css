@@ -3,6 +3,7 @@
 
 body {
     background-color: #f2f2f2;
+    font-family: "GraphikTT", "Arial", sans-serif;
 }
 
 .preloader {
@@ -223,7 +224,7 @@ input {
 
 /*** Типографика ***/
 h1 {
-	font-family: 'Arial';
+    font-family: "GraphikTT", "Arial", sans-serif;
 	font-size: 35px;
 	line-height: 1;
 	color: 	#333;
@@ -234,7 +235,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Arial';
+    font-family: "GraphikTT", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 1;
 	color: 	#333;
@@ -245,7 +246,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Arial';
+    font-family: "GraphikTT", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 1.2;
 	color: 	#333;
@@ -257,7 +258,7 @@ h3 {
 }
 
 p {
-	font-family: 'Trebuchet MS';
+    font-family: "GraphikTT", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 1.4;
 	color: 	#333;
