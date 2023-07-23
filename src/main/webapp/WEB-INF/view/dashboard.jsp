@@ -22,7 +22,7 @@
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #7556f3">
             <a class="navbar-brand" href="/">
-                <img src="<c:url value="/resources/img/logoDash.svg" />" width="65" height="45" class="d-inline-block align-top" alt="">
+                <img src="<c:url value="/resources/img/plann-logo-bg-purple.svg" />" width="55" height="55" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
