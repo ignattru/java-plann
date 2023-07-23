@@ -17,7 +17,7 @@
         <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js" ></script>
         <script src="<c:url value="/resources/js/calendar.js" />" defer></script>
         <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="theme-color" content="#FF8F00">
+        <meta name="theme-color" content="#7556f3">
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #7556f3">
