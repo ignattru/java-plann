@@ -56,7 +56,7 @@
             <div class="card mb-3" style="max-width: 540px; border: none;">
                 <div class="row no-gutters" style="background-color: #7556f3;clip-path: none;">
                     <div class="col-md-4">
-                        <img src="<c:url value="/resources/img/logoDash.svg" />" style="height: 70%; width: 100%;"
+                        <img src="<c:url value="/resources/img/plann-logo-bg-purple.svg" />"
                               class="card-img" alt="...">
                     </div>
                     <div class="col-md-8">
@@ -119,7 +119,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${countDoneSubTask}/${countSubTask_ + task.id}</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${countDoneSubTask}/${countSubTask}</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>

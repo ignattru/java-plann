@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
-    background-color: #f2f2f2;
+    background-color: #f3f3f3;
     font-family: "GraphikTT", "Arial", sans-serif;
 }
 
@@ -138,10 +138,14 @@ input {
 .taskbody p a:hover {
     color: #cbbeff;
 }
-
+/*
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-    background-color: #cbbeff;
-    color: #fff;
+    background-color: #e8e8e8;
+
+}*/
+.table-hover tbody tr:hover{
+    background-color: #e8e8e8;
+    color: #fcfcfc;
 }
 
 .table-hover tbody a {
@@ -217,7 +221,7 @@ input {
     border-radius: 4px 4px 4px 4px;
 }
 .col-sm-3 {
-    background-color: #f7f7f7;
+    background-color: #fffaf1;
     color: 	#333;
 }
 
