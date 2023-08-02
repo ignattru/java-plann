@@ -70,8 +70,8 @@ input {
 .btn-outline-warning {
     color: #fff;
     border-radius: 2rem;
-    background-color: #957cf7;
-    border-color: #987dff;
+    background-color: #e17d8e;
+    border-color: #e17d8e9c;
 }
 
 .btn-outline-warning:hover {
@@ -138,14 +138,18 @@ input {
 .taskbody p a:hover {
     color: #cbbeff;
 }
-/*
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-    background-color: #e8e8e8;
 
-}*/
 .table-hover tbody tr:hover{
-    background-color: #e8e8e8;
-    color: #fcfcfc;
+    background-color: #eeeeee;
+    color: #4c4f7a;
+}
+
+table tr td:last-child {
+    border-radius: 0 3px 3px 0
+}
+
+table tr td:first-child {
+    border-radius: 3px 0 0 3px
 }
 
 .table-hover tbody a {
@@ -162,11 +166,12 @@ input {
 }
 
 .table-hover tbody tr:hover a:hover {
-    color: #ecff24;
+    color: #e17d8e;
 }
 
 .table td, .table th {
     vertical-align: middle;
+    border-top: 2px solid #f7f7f7;/******/
 }
 
 .table tr{
