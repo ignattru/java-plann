@@ -23,8 +23,8 @@
           destroy-method="close" >
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
         <property name="jdbcUrl" value="jdbc:mysql://192.168.0.104:3306/meetdatedemo?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
-        <property name="user" value="root" />
-        <property name="password" value="268HbcjFh[b{bhe" />
+        <property name="user" value="null" />
+        <property name="password" value="null" />
     </bean>
     <bean id="sessionFactory"
           class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
