@@ -47,6 +47,12 @@ public class Task {
     @Column(name = "closedate")
     private String closedate;
 
+    @Column(name = "cntsubtask")
+    private int cntsubtask;
+
+    @Column(name = "cntdonesubtask")
+    private int cntdonesubtask;
+
     @OneToOne
     @JoinColumn(name = "makerid", insertable=false, updatable=false)
     private User taskUser;
@@ -62,7 +68,7 @@ public class Task {
     public Task() {
     }
 
-    public Task(String title, String body, int important, Integer reportid, int status, int tagid, int makerid, String createdate, String updatedate, String plandate, String closedate) {
+    public Task(String title, String body, int important, Integer reportid, int status, int tagid, int makerid, String createdate, String updatedate, String plandate, String closedate, int cntsubtask, int cntdonesubtask) {
         this.title = title;
         this.body = body;
         this.important = important;
@@ -74,6 +80,8 @@ public class Task {
         this.updatedate = updatedate;
         this.plandate = plandate;
         this.closedate = closedate;
+        this.cntsubtask = cntsubtask;
+        this.cntdonesubtask = cntdonesubtask;
     }
 
     public int getId() {
@@ -183,6 +191,22 @@ public class Task {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+    }
+
+    public int getCountSubTask() {
+        return cntsubtask;
+    }
+
+    public void setCountSubTask(int cntsubtask) {
+        this.cntsubtask = cntsubtask;
+    }
+
+    public int getCountDoneSubTask() {
+        return cntdonesubtask;
+    }
+
+    public void setCountDoneSubTask(int cntdonesubtask) {
+        this.cntdonesubtask = cntdonesubtask;
     }
 
     public User getTaskUser() {

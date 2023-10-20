@@ -119,7 +119,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${countDoneSubTask}/${countSubTask}</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
@@ -162,7 +162,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${countDoneSubTask}/${countSubTask}</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
@@ -205,7 +205,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${countDoneSubTask}/${countSubTask}</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
@@ -248,7 +248,7 @@
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                     <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${countDoneSubTask}/${countSubTask}</span></td>
+                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
                                                     <td width="110">${task.createdate}</td>
                                                     <td width="110">${task.plandate}</td>
                                                     <td width="110">${task.taskUser.fio}</td>
