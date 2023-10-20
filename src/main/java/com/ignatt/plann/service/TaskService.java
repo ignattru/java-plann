@@ -9,9 +9,9 @@ public interface TaskService {
 
     public int getCountTask(int important);
 
-    public int getCountSubTask(int taskid);
+    public int getCountSubTaskById(int taskid);
 
-    public int getCountDoneSubTask(int taskid);
+    public int getCountDoneSubTaskById(int taskid);
 
     public List<Task> getAllTasks();
 

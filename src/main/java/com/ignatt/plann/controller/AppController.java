@@ -40,11 +40,13 @@ public class AppController {
         int countTaskTab4 = taskService.getCountTask(4);
         model.addAttribute("countTaskTab4",countTaskTab4);
 
-        int countSubTask = taskService.getCountSubTask(42);
+        /*  test method for subtask count by id task
+        int countSubTask = taskService.getCountSubTaskById(42);
         model.addAttribute("countSubTask",countSubTask);
 
-        int countDoneSubTask = taskService.getCountDoneSubTask(42);
+        int countDoneSubTask = taskService.getCountDoneSubTaskById(42);
         model.addAttribute("countDoneSubTask",countDoneSubTask);
+        */
 
         return "dashboard";
     }

@@ -31,7 +31,7 @@ public class TaskDAOImpl implements TaskDAO {
     }
 
     @Override
-    public int getCountSubTask(int taskid) {
+    public int getCountSubTaskById(int taskid) {
         Session session = sessionFactory.getCurrentSession();
         Query<Task> query = session.createQuery("from Task as task\n" +
                 "where task.id in (\n" +
@@ -42,7 +42,7 @@ public class TaskDAOImpl implements TaskDAO {
     }
 
     @Override
-    public int getCountDoneSubTask(int taskid) {
+    public int getCountDoneSubTaskById(int taskid) {
         Session session = sessionFactory.getCurrentSession();
         Query<Task> query = session.createQuery("from Task as task\n" +
                 "where task.status != 4 and task.id in (\n" +
