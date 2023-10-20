@@ -18,10 +18,10 @@
     <meta name="theme-color" content="#FF8F00">
 </head>
 <body style="background-color:#ebebeb;" >
-<div class="container" style="background-color: #7556f3; color: #fff;">
+<div class="container" style="background-color: #7556f3; color: #fff; ">
     <a href="./" class="btn btn-default navbar-btn" role="button">Закрыть</a>
 </div>
-<div class="container" style="background-color:#fbfbfb";>
+<div class="container" style="background-color:#fbfbfb; box-shadow: 0 2px 10px 0 rgba(0,0,0,.03), 0 2px 20px 10px rgba(0,0,0,.02);" ;>
     <form:form action="saveTask" modelAttribute="task">
         <form:hidden path="id"/>
         <div class="form-row">
