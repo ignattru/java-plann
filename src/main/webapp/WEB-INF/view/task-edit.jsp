@@ -106,7 +106,7 @@
         </div>
         <div class="form-group">
             <div class="form-group col-md-3">
-                <label>Статус</label>
+                <label>Статус:</label>
                 <spring:select path="status" class="form-control">
                     <spring:option value="1">Открыто</spring:option>
                     <spring:option value="2">В работе</spring:option>
@@ -118,6 +118,17 @@
             </div>
         </div>
     </div>
+        <div class="form-group">
+            <div class="form-group col-md-6">
+                <label>Родительская задача:</label>
+                <spring:select path="parentTask" class="form-control">
+                    <spring:option value="0">Не выбрано</spring:option>
+                    <c:forEach var="task" items="${allTask}">
+                        <spring:option value="${task.id}">${task.title}</spring:option>
+                    </c:forEach>
+                </spring:select>
+            </div>
+        </div>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <button type="submit" class="btn btn-warning" style="background-color: #7556f3; border-color: #bdadff; color: #fff;">Сохранить</button>

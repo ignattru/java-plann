@@ -53,6 +53,9 @@ public class Task {
     @Column(name = "cntdonesubtask")
     private int cntdonesubtask;
 
+    @Column(name = "parenttask")
+    private int parenttask;
+
     @OneToOne
     @JoinColumn(name = "makerid", insertable=false, updatable=false)
     private User taskUser;
@@ -68,7 +71,7 @@ public class Task {
     public Task() {
     }
 
-    public Task(String title, String body, int important, Integer reportid, int status, int tagid, int makerid, String createdate, String updatedate, String plandate, String closedate, int cntsubtask, int cntdonesubtask) {
+    public Task(String title, String body, int important, Integer reportid, int status, int tagid, int makerid, String createdate, String updatedate, String plandate, String closedate, int cntsubtask, int cntdonesubtask, int parenttask) {
         this.title = title;
         this.body = body;
         this.important = important;
@@ -82,6 +85,7 @@ public class Task {
         this.closedate = closedate;
         this.cntsubtask = cntsubtask;
         this.cntdonesubtask = cntdonesubtask;
+        this.parenttask = parenttask;
     }
 
     public int getId() {
@@ -207,6 +211,14 @@ public class Task {
 
     public void setCountDoneSubTask(int cntdonesubtask) {
         this.cntdonesubtask = cntdonesubtask;
+    }
+
+    public int getParentTask() {
+        return parenttask;
+    }
+
+    public void setParentTask(int parenttask) {
+        this.parenttask = parenttask;
     }
 
     public User getTaskUser() {

@@ -72,6 +72,8 @@ public class AppController {
     public String updateTask ( @RequestParam("taskId") int id, Model model){
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);
+        List<Task> allTask = taskService.getAllTasks();
+        model.addAttribute("allTask", allTask);
         return "task-edit";
     }
 
