@@ -187,6 +187,7 @@ public class Task {
     public String getClosedate() {
         return closedate;
     }
+
     public void setClosedate(String closedate) {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MMM-dd", Locale.ENGLISH);
         this.closedate = closedate;
@@ -202,11 +203,11 @@ public class Task {
     }
 
     public void setCountSubTask(int cntsubtask) {
-        this.cntsubtask = cntsubtask;
+            this.cntsubtask = cntsubtask;
     }
 
     public int getCountDoneSubTask() {
-        return cntdonesubtask;
+        return  cntdonesubtask;
     }
 
     public void setCountDoneSubTask(int cntdonesubtask) {
@@ -224,6 +225,7 @@ public class Task {
     public User getTaskUser() {
         return taskUser;
     }
+
     public void setTaskUser(User taskUser) {
         this.taskUser = taskUser;
     }
@@ -231,6 +233,7 @@ public class Task {
     public TaskStatus getTaskStatus() {
         return taskStatus;
     }
+
     public void setTaskStatus(TaskStatus taskStatus) {
         this.taskStatus = taskStatus;
     }

@@ -30,6 +30,7 @@ public class TaskDAOImpl implements TaskDAO {
         return countTask.size();
     }
 
+
     @Override
     public int getCountSubTaskById(int taskid) {
         Session session = sessionFactory.getCurrentSession();
@@ -51,6 +52,7 @@ public class TaskDAOImpl implements TaskDAO {
         List<Task> countTask = query.getResultList();
         return countTask.size();
     }
+
 
     @Override
     public List<Task> getAllTasks() {

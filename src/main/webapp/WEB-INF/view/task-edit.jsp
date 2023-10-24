@@ -99,7 +99,7 @@
                 <spring:select path="tagId" class="form-control">
                     <spring:option value="1">Аналитика</spring:option>
                     <spring:option value="2">Разработка</spring:option>
-                    <spring:option value="3">Журнал</spring:option>
+                    <spring:option value="3">Менеджеры</spring:option>
                     <spring:option value="4">Разное</spring:option>
                 </spring:select>
             </div>
@@ -117,9 +117,8 @@
                 </spring:select>
             </div>
         </div>
-    </div>
         <div class="form-group">
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
                 <label>Родительская задача:</label>
                 <spring:select path="parentTask" class="form-control">
                     <spring:option value="0">Не выбрано</spring:option>
@@ -128,13 +127,12 @@
                     </c:forEach>
                 </spring:select>
             </div>
+            <button type="submit" class="btn btn-warning" style="background-color: #7556f3; border-color: #bdadff; color: #fff;">Сохранить</button>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <button type="submit" class="btn btn-warning" style="background-color: #7556f3; border-color: #bdadff; color: #fff;">Сохранить</button>
-            </div>
-        </div>
-    </form:form>
+        </form:form>
+    </div>
+
+
 </div>
 <script src="<c:url value="/resources/js/jquery-3.2.1.min.js" />"></script>
 <script src="<c:url value="/resources/js/moment-with-locales.min.js" />"></script>
