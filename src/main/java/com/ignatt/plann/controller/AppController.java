@@ -16,7 +16,7 @@ public class AppController {
     private TaskService taskService;
     private TaskTagService taskTagService;
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String showAllTask(Model model) {
 
         List<Task> allTaskTab1 = taskService.getAllTask(1);
@@ -52,7 +52,7 @@ public class AppController {
     }
 
     // Create task
-    @RequestMapping("/addNewTask")
+    @GetMapping("/addNewTask")
     public String addNewEmployee (Model model){
         Task task = new Task();
         model.addAttribute("task", task);
@@ -60,7 +60,7 @@ public class AppController {
     }
 
     // Read task
-    @RequestMapping("/viewTask")
+    @GetMapping("/viewTask")
     public String viewTask ( @RequestParam("taskId") int id, Model model){
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);
@@ -68,7 +68,7 @@ public class AppController {
     }
 
     // Update task
-    @RequestMapping("/updateInfo")
+    @GetMapping("/updateInfo")
     public String updateTask ( @RequestParam("taskId") int id, Model model){
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);
@@ -78,14 +78,14 @@ public class AppController {
     }
 
     // Delete task
-    @RequestMapping("/deleteTask")
+    @DeleteMapping("/deleteTask")
     public String deleteTask ( @RequestParam("taskId") int id){
         taskService.deleteTask(id);
         return "redirect:/";
     }
 
     // Save task
-    @RequestMapping("/saveTask")
+    @PostMapping("/saveTask")
     public String saveTask (@ModelAttribute("task") Task task){
         taskService.saveTask(task);
         return "redirect:/";
