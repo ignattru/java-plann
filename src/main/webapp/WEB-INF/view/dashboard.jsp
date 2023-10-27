@@ -105,25 +105,27 @@
                                             </tr>
                                             </thead>
                                             <tbody id="tasktable1">
-                                            <c:forEach var="task" items="${allTaskTab1}">
+                                            <c:forEach items="${tasksWithCountTab1}" var="task">
                                                 <c:url var="viewButton" value="/viewTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="deleteButton" value="/deleteTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
-
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
-                                                    <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
-                                                    <td width="110">${task.createdate}</td>
-                                                    <td width="110">${task.plandate}</td>
-                                                    <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
+                                                    <td>${task.key.id}</td>
+                                                    <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
+                                                        <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
+                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                    </td>
+                                                    <td width="110">${task.key.createdate}</td>
+                                                    <td width="110">${task.key.plandate}</td>
+                                                    <td width="110">${task.key.taskUser.fio}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.key.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>
@@ -149,24 +151,27 @@
                                                 </tr>
                                             </thead>
                                             <tbody id="tasktable2">
-                                            <c:forEach var="task" items="${allTaskTab2}">
+                                            <c:forEach items="${tasksWithCountTab2}" var="task">
                                                 <c:url var="viewButton" value="/viewTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="deleteButton" value="/deleteTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
-                                                    <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
-                                                    <td width="110">${task.createdate}</td>
-                                                    <td width="110">${task.plandate}</td>
-                                                    <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
+                                                    <td>${task.key.id}</td>
+                                                    <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
+                                                        <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
+                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                    </td>
+                                                    <td width="110">${task.key.createdate}</td>
+                                                    <td width="110">${task.key.plandate}</td>
+                                                    <td width="110">${task.key.taskUser.fio}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.key.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>
@@ -192,24 +197,27 @@
                                             </tr>
                                             </thead>
                                             <tbody id="tasktable3">
-                                            <c:forEach var="task" items="${allTaskTab3}">
+                                            <c:forEach items="${tasksWithCountTab3}" var="task">
                                                 <c:url var="viewButton" value="/viewTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="deleteButton" value="/deleteTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
-                                                    <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
-                                                    <td width="110">${task.createdate}</td>
-                                                    <td width="110">${task.plandate}</td>
-                                                    <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
+                                                    <td>${task.key.id}</td>
+                                                    <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
+                                                        <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
+                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                    </td>
+                                                    <td width="110">${task.key.createdate}</td>
+                                                    <td width="110">${task.key.plandate}</td>
+                                                    <td width="110">${task.key.taskUser.fio}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.key.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>
@@ -235,24 +243,27 @@
                                             </tr>
                                             </thead>
                                             <tbody id="tasktable4">
-                                            <c:forEach var="task" items="${allTaskTab4}">
+                                            <c:forEach items="${tasksWithCountTab4}" var="task">
                                                 <c:url var="viewButton" value="/viewTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="updateButton" value="/updateInfo">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <c:url var="deleteButton" value="/deleteTask">
-                                                    <c:param name="taskId" value="${task.id}" />
+                                                    <c:param name="taskId" value="${task.key.id}" />
                                                 </c:url>
                                                 <tr>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${updateButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/edit.svg" />) #e9ecef no-repeat center;" /></a></td>
-                                                    <td>${task.id}</td>
-                                                    <td><span class="badge">@${task.taskTag.tagName}</span><br><a href="#" onClick="window.location.href = '${viewButton}'">${task.title}</a><br><span class="badge">${task.countDoneSubTask}/${task.countSubTask}</span></td>
-                                                    <td width="110">${task.createdate}</td>
-                                                    <td width="110">${task.plandate}</td>
-                                                    <td width="110">${task.taskUser.fio}</td>
-                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.taskStatus.statusname}</span></td>
+                                                    <td>${task.key.id}</td>
+                                                    <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
+                                                        <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
+                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                    </td>
+                                                    <td width="110">${task.key.createdate}</td>
+                                                    <td width="110">${task.key.plandate}</td>
+                                                    <td width="110">${task.key.taskUser.fio}</td>
+                                                    <td width="110"><span class="badge" style="font-size: 15px;">${task.key.taskStatus.statusname}</span></td>
                                                     <td><a style="border-bottom: none;" href="#"><input type="button" onClick="window.location.href = '${deleteButton}'"  class="btn btn-warning btn-edit" style="background: url(<c:url value="/resources/img/delete.svg" />) #e9ecef no-repeat center;" /></a></td>
                                                 </tr>
                                             </c:forEach>

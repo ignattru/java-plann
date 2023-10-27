@@ -9,9 +9,9 @@ public interface TaskDAO {
 
     public int getCountTask(int important);
 
-    public int getCountSubTaskById(int taskid);
+    public List<Task> getSubTasks(Integer taskId);
 
-    public int getCountDoneSubTaskById(int taskid);
+    public List<Task> getDoneSubTasks(Integer taskId);
 
     public List<Task> getAllTasks();
 

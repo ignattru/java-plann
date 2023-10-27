@@ -47,12 +47,6 @@ public class Task {
     @Column(name = "closedate")
     private String closedate;
 
-    @Column(name = "cntsubtask")
-    private int cntsubtask;
-
-    @Column(name = "cntdonesubtask")
-    private int cntdonesubtask;
-
     @Column(name = "parenttask")
     private int parenttask;
 
@@ -71,7 +65,7 @@ public class Task {
     public Task() {
     }
 
-    public Task(String title, String body, int important, Integer reportid, int status, int tagid, int makerid, String createdate, String updatedate, String plandate, String closedate, int cntsubtask, int cntdonesubtask, int parenttask) {
+    public Task(String title, String body, int important, Integer reportid, int status, int tagid, int makerid, String createdate, String updatedate, String plandate, String closedate, int parenttask) {
         this.title = title;
         this.body = body;
         this.important = important;
@@ -83,8 +77,6 @@ public class Task {
         this.updatedate = updatedate;
         this.plandate = plandate;
         this.closedate = closedate;
-        this.cntsubtask = cntsubtask;
-        this.cntdonesubtask = cntdonesubtask;
         this.parenttask = parenttask;
     }
 
@@ -136,7 +128,6 @@ public class Task {
     public void setTagId(int tagid) {
         this.tagid = tagid;
     }
-
 
     public int getMakerid() {
         return makerid;
@@ -196,22 +187,6 @@ public class Task {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-    }
-
-    public int getCountSubTask() {
-        return cntsubtask;
-    }
-
-    public void setCountSubTask(int cntsubtask) {
-            this.cntsubtask = cntsubtask;
-    }
-
-    public int getCountDoneSubTask() {
-        return  cntdonesubtask;
-    }
-
-    public void setCountDoneSubTask(int cntdonesubtask) {
-        this.cntdonesubtask = cntdonesubtask;
     }
 
     public int getParentTask() {

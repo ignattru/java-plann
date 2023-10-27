@@ -9,11 +9,11 @@ public interface TaskService {
 
     public int getCountTask(int important);
 
-    public int getCountSubTaskById(int taskid);
-
-    public int getCountDoneSubTaskById(int taskid);
-
     public List<Task> getAllTasks();
+
+    public List<Task> getSubTasks(Integer taskId);
+
+    public List<Task> getDoneSubTasks(Integer taskId);
 
     public void saveTask(Task task);
 
