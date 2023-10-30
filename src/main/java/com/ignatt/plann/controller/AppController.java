@@ -20,41 +20,39 @@ public class AppController {
     @GetMapping("/")
     public String showAllTask(Model model) {
 
-        int countTaskTab1 = taskService.getCountTask(1);
-        model.addAttribute("countTaskTab1", countTaskTab1);
-
-        int countTaskTab2 = taskService.getCountTask(2);
-        model.addAttribute("countTaskTab2", countTaskTab2);
-
-        int countTaskTab3 = taskService.getCountTask(3);
-        model.addAttribute("countTaskTab3", countTaskTab3);
-
-        int countTaskTab4 = taskService.getCountTask(4);
-        model.addAttribute("countTaskTab4",countTaskTab4);
-
+        // Get all tasks
         List<Task> tasks = taskService.getAllTasks();
+
+        // Create hashmap for each tab by important field
         Map<Task, CountsPair> tasksWithCountTab1 = new HashMap<>();
         Map<Task, CountsPair> tasksWithCountTab2 = new HashMap<>();
         Map<Task, CountsPair> tasksWithCountTab3 = new HashMap<>();
         Map<Task, CountsPair> tasksWithCountTab4 = new HashMap<>();
 
         for (Task task : tasks) {
+
+            // Get subtasks and done subtasks
             List<Task> subTasks = taskService.getSubTasks(task.getId());
             List<Task> doneSubTasks = taskService.getDoneSubTasks(task.getId());
 
+            // Create pairs "count subtask","count done subtasks"
             CountsPair countsPair = new CountsPair(subTasks.size(), doneSubTasks.size());
             switch (task.getImportant()) {
                 case 1:
                     tasksWithCountTab1.put(task, countsPair);
+                    model.addAttribute("countTaskTab1", tasksWithCountTab1.size());
                     break;
                 case 2:
                     tasksWithCountTab2.put(task, countsPair);
+                    model.addAttribute("countTaskTab2", tasksWithCountTab2.size());
                     break;
                 case 3:
                     tasksWithCountTab3.put(task, countsPair);
+                    model.addAttribute("countTaskTab3", tasksWithCountTab3.size());
                     break;
                 case 4:
                     tasksWithCountTab4.put(task, countsPair);
+                    model.addAttribute("countTaskTab4", tasksWithCountTab4.size());
                     break;
             }
         }
