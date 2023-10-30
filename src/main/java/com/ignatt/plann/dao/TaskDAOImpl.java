@@ -41,7 +41,7 @@ public class TaskDAOImpl implements TaskDAO {
     @Override
     public List<Task> getDoneSubTasks(Integer taskId) {
         Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("from Task where parentTask = :taskId and status != 4", Task.class);
+        Query query = session.createQuery("from Task where parentTask = :taskId and status = 4", Task.class);
         query.setParameter("taskId", taskId);
         return query.getResultList();
     }
