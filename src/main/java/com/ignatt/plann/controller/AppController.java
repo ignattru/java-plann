@@ -1,7 +1,9 @@
 package com.ignatt.plann.controller;
 import com.ignatt.plann.entity.CountsPair;
 import com.ignatt.plann.entity.Task;
+import com.ignatt.plann.entity.TaskStatus;
 import com.ignatt.plann.service.TaskService;
+import com.ignatt.plann.service.TaskStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +18,7 @@ public class AppController {
 
     @Autowired
     private TaskService taskService;
+    private TaskStatusService taskStatusService;
 
     @GetMapping("/")
     public String showAllTask(Model model) {
@@ -86,10 +89,16 @@ public class AppController {
     public String updateTask ( @RequestParam("taskId") int id, Model model){
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);
+
+        // Get all tasks for select parent task
         List<Task> allTask = taskService.getAllTasks();
         model.addAttribute("allTask", allTask);
+
         return "task-edit";
     }
+
+
+
 
     // Delete task
     @GetMapping("/deleteTask")

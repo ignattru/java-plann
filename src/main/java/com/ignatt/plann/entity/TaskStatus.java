@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "taskstatus")
 public class TaskStatus {
+
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name = "id")
