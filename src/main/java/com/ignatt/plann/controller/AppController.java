@@ -76,11 +76,31 @@ public class AppController {
         return "dashboard";
     }
 
+    // Create dict for addnewtask form and edit task form
+    private void loadDict(Model model) {
+        // Get all tasks for select parent task
+        List<Task> allTask = taskService.getAllTasks();
+        model.addAttribute("allTask", allTask);
+
+        // Get all statuses
+        List<TaskStatus> allTaskStatus = taskStatusService.getAllTaskStatus();
+        model.addAttribute("allTaskStatus", allTaskStatus);
+
+        // Get all tags
+        List<TaskTag> allTaskTags = taskTagService.getAllTaskTag();
+        model.addAttribute("allTaskTags", allTaskTags);
+
+        // Get all users
+        List<User> allUsers = userService.getAllUsers();
+        model.addAttribute("allUsers", allUsers);
+    }
+
     // Create task
     @GetMapping("/addNewTask")
     public String addNewEmployee (Model model){
         Task task = new Task();
         model.addAttribute("task", task);
+        loadDict(model);
         return "task-edit";
     }
 
@@ -97,23 +117,7 @@ public class AppController {
     public String updateTask ( @RequestParam("taskId") int id, Model model){
         Task task = taskService.getTask(id);
         model.addAttribute("task", task);
-
-        // Get all tasks for select parent task
-        List<Task> allTask = taskService.getAllTasks();
-        model.addAttribute("allTask", allTask);
-
-        // Get all statuses
-        List<TaskStatus> allTaskStatus = taskStatusService.getAllTaskStatus();
-        model.addAttribute("allTaskStatus", allTaskStatus);
-
-        // Get all tags
-        List<TaskTag> allTaskTags = taskTagService.getAllTaskTag();
-        model.addAttribute("allTaskTags", allTaskTags);
-
-        // Get all tags
-        List<User> allUsers = userService.getAllUsers();
-        model.addAttribute("allUsers", allUsers);
-
+        loadDict(model);
         return "task-edit";
     }
 
