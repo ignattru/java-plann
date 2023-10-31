@@ -32,10 +32,10 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Настройки</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Редактор</a>
+                            <a class="dropdown-item" href="#">Настройки</a>
                             <a class="dropdown-item" href="#">Мета данные</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Инструкции</a>
+                            <a class="dropdown-item" href="#">Документация</a>
                         </div>
                     </li>
                     <li class="nav-item">
