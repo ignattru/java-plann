@@ -1,10 +1,9 @@
 package com.ignatt.plann.controller;
-import com.ignatt.plann.entity.CountsPair;
-import com.ignatt.plann.entity.Task;
-import com.ignatt.plann.entity.TaskStatus;
+import com.ignatt.plann.entity.*;
 import com.ignatt.plann.service.TaskService;
 import com.ignatt.plann.service.TaskStatusService;
 import com.ignatt.plann.service.TaskTagService;
+import com.ignatt.plann.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +21,12 @@ public class AppController {
 
     @Autowired
     private TaskStatusService taskStatusService;
+
+    @Autowired
+    private TaskTagService taskTagService;
+
+    @Autowired
+    private UserService userService;
 
     @GetMapping("/")
     public String showAllTask(Model model) {
@@ -100,6 +105,14 @@ public class AppController {
         // Get all statuses
         List<TaskStatus> allTaskStatus = taskStatusService.getAllTaskStatus();
         model.addAttribute("allTaskStatus", allTaskStatus);
+
+        // Get all tags
+        List<TaskTag> allTaskTags = taskTagService.getAllTaskTag();
+        model.addAttribute("allTaskTags", allTaskTags);
+
+        // Get all tags
+        List<User> allUsers = userService.getAllUsers();
+        model.addAttribute("allUsers", allUsers);
 
         return "task-edit";
     }

@@ -75,10 +75,9 @@
             <div class="form-group col-md-3">
                 <label>Исполнитель:</label>
                 <spring:select path="makerid" class="form-control">
-                    <spring:option value="1">Евгений Игнатуша</spring:option>
-                    <spring:option value="2">Антон Деплоев</spring:option>
-                    <spring:option value="3">Игорь Коммитов</spring:option>
-                    <spring:option value="4">Анастасия Гитхабавна</spring:option>
+                    <c:forEach var="userList" items="${allUsers}">
+                        <spring:option value="${userList.id}">${userList.fio}</spring:option>
+                    </c:forEach>
                 </spring:select>
             </div>
         </div>
@@ -97,10 +96,9 @@
             <div class="form-group col-md-3">
                 <label>Раздел:</label>
                 <spring:select path="tagId" class="form-control">
-                    <spring:option value="1">Аналитика</spring:option>
-                    <spring:option value="2">Разработка</spring:option>
-                    <spring:option value="3">Менеджеры</spring:option>
-                    <spring:option value="4">Разное</spring:option>
+                    <c:forEach var="taskTag" items="${allTaskTags}">
+                        <spring:option value="${taskTag.id}">${taskTag.tagName}</spring:option>
+                    </c:forEach>
                 </spring:select>
             </div>
         </div>

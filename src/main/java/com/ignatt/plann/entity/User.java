@@ -101,6 +101,4 @@ public class User {
     public void setUpdatedate(Date updatedate) {
         this.updatedate = updatedate;
     }
-
-
 }
