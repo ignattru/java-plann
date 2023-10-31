@@ -4,6 +4,7 @@ import com.ignatt.plann.entity.Task;
 import com.ignatt.plann.entity.TaskStatus;
 import com.ignatt.plann.service.TaskService;
 import com.ignatt.plann.service.TaskStatusService;
+import com.ignatt.plann.service.TaskTagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,8 @@ public class AppController {
 
     @Autowired
     private TaskService taskService;
+
+    @Autowired
     private TaskStatusService taskStatusService;
 
     @GetMapping("/")
@@ -94,11 +97,12 @@ public class AppController {
         List<Task> allTask = taskService.getAllTasks();
         model.addAttribute("allTask", allTask);
 
+        // Get all statuses
+        List<TaskStatus> allTaskStatus = taskStatusService.getAllTaskStatus();
+        model.addAttribute("allTaskStatus", allTaskStatus);
+
         return "task-edit";
     }
-
-
-
 
     // Delete task
     @GetMapping("/deleteTask")

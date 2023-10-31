@@ -19,10 +19,11 @@ public class TaskTagDAOImpl implements TaskTagDAO{
     @Override
     public List<TaskTag> getAllTaskTag() {
         Session session = sessionFactory.getCurrentSession();
-        Query<TaskTag> query = session.createQuery("from TaskTag", TaskTag.class);
+        Query<TaskTag>query = session.createQuery("from TaskTag", TaskTag.class);
         List<TaskTag> allTaskTag = query.getResultList();
         return allTaskTag;
     }
+
 
     @Override
     public void saveTaskTag(TaskTag taskTag) {

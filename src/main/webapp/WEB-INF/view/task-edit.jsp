@@ -108,12 +108,9 @@
             <div class="form-group col-md-3">
                 <label>Статус:</label>
                 <spring:select path="status" class="form-control">
-                    <spring:option value="1">Открыто</spring:option>
-                    <spring:option value="2">В работе</spring:option>
-                    <spring:option value="3">На проверке</spring:option>
-                    <spring:option value="4">Выполнено</spring:option>
-                    <spring:option value="5">Отложено</spring:option>
-                    <spring:option value="6">Удалено</spring:option>
+                    <c:forEach var="taskStatus" items="${allTaskStatus}">
+                        <spring:option value="${taskStatus.id}">${taskStatus.statusname}</spring:option>
+                    </c:forEach>
                 </spring:select>
             </div>
         </div>
