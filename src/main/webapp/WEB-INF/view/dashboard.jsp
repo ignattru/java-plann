@@ -120,7 +120,10 @@
                                                     <td>${task.key.id}</td>
                                                     <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
                                                         <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
-                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                        <span class="badge">
+                                                            <img src="<c:url value="/resources/img/subtasks.svg" />">
+                                                                ${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}
+                                                        </span>
                                                     </td>
                                                     <td width="110">${task.key.createdate}</td>
                                                     <td width="110">${task.key.plandate}</td>
@@ -166,7 +169,10 @@
                                                     <td>${task.key.id}</td>
                                                     <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
                                                         <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
-                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                        <span class="badge">
+                                                            <img src="<c:url value="/resources/img/subtasks.svg" />">
+                                                                ${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}
+                                                        </span>
                                                     </td>
                                                     <td width="110">${task.key.createdate}</td>
                                                     <td width="110">${task.key.plandate}</td>
@@ -212,7 +218,10 @@
                                                     <td>${task.key.id}</td>
                                                     <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
                                                         <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
-                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                        <span class="badge">
+                                                            <img src="<c:url value="/resources/img/subtasks.svg" />">
+                                                                ${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}
+                                                        </span>
                                                     </td>
                                                     <td width="110">${task.key.createdate}</td>
                                                     <td width="110">${task.key.plandate}</td>
@@ -258,7 +267,10 @@
                                                     <td>${task.key.id}</td>
                                                     <td><span class="badge">@${task.key.taskTag.tagName}</span><br>
                                                         <a href="#" onClick="window.location.href = '${viewButton}'">${task.key.title}</a><br>
-                                                        <span class="badge">${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}</span>
+                                                        <span class="badge">
+                                                            <img src="<c:url value="/resources/img/subtasks.svg" />">
+                                                                ${task.value.subtaskCnt}/${task.value.doneSubtaskCnt}
+                                                        </span>
                                                     </td>
                                                     <td width="110">${task.key.createdate}</td>
                                                     <td width="110">${task.key.plandate}</td>
