@@ -1,7 +1,6 @@
 package com.ignatt.plann.service;
 
 import com.ignatt.plann.entity.Notion;
-
 import java.util.List;
 
 public interface NotionService {

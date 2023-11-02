@@ -73,6 +73,10 @@ public class AppController {
         model.addAttribute("tasksWithCountTab3", tasksWithCountTab3);
         model.addAttribute("tasksWithCountTab4", tasksWithCountTab4);
 
+        // Get all notions
+        List<Notion> allNotions = notionService.getAllNotions();
+        model.addAttribute("allNotions", allNotions);
+
         return "dashboard";
     }
 
@@ -94,9 +98,6 @@ public class AppController {
         List<User> allUsers = userService.getAllUsers();
         model.addAttribute("allUsers", allUsers);
 
-        // Get all notions
-        List<Notion> allNotions = notionService.getAllNotions();
-        model.addAttribute("allNotions", allNotions);
     }
 
     // Create task

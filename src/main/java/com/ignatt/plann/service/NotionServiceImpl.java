@@ -3,10 +3,12 @@ package com.ignatt.plann.service;
 import com.ignatt.plann.dao.NotionDAO;
 import com.ignatt.plann.entity.Notion;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Service
 public class NotionServiceImpl implements NotionService {
 
     @Autowired

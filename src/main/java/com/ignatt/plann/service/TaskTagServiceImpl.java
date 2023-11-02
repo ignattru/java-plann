@@ -1,13 +1,12 @@
 package com.ignatt.plann.service;
 
-
 import com.ignatt.plann.dao.TaskTagDAO;
 import com.ignatt.plann.entity.TaskTag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import java.util.List;
 
+import java.util.List;
 
 @Service
 public class TaskTagServiceImpl implements TaskTagService {

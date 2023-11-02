@@ -4,6 +4,7 @@ import com.ignatt.plann.entity.TaskTag;
 import java.util.List;
 
 public interface TaskTagService {
+
     public List<TaskTag> getAllTaskTag();
 
     public void saveTaskTag(TaskTag taskTag);

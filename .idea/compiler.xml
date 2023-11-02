@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="J_Plann" />
         <module name="plann" />
+        <module name="J_Plann" />
       </profile>
     </annotationProcessing>
   </component>

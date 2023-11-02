@@ -3,7 +3,7 @@ package com.ignatt.plann.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "taskstatus")
+@Table(name = "notions")
 public class Notion {
 
     @Id
@@ -40,6 +40,14 @@ public class Notion {
 
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getBody() {
+        return body;
     }
 
     public void setBody(String body) {
