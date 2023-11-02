@@ -1,9 +1,6 @@
 package com.ignatt.plann.controller;
 import com.ignatt.plann.entity.*;
-import com.ignatt.plann.service.TaskService;
-import com.ignatt.plann.service.TaskStatusService;
-import com.ignatt.plann.service.TaskTagService;
-import com.ignatt.plann.service.UserService;
+import com.ignatt.plann.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,6 +24,9 @@ public class AppController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private NotionService notionService;
 
     @GetMapping("/")
     public String showAllTask(Model model) {
@@ -93,6 +93,10 @@ public class AppController {
         // Get all users
         List<User> allUsers = userService.getAllUsers();
         model.addAttribute("allUsers", allUsers);
+
+        // Get all notions
+        List<Notion> allNotions = notionService.getAllNotions();
+        model.addAttribute("allNotions", allNotions);
     }
 
     // Create task
