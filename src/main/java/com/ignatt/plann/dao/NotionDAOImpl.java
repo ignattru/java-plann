@@ -1,6 +1,6 @@
 package com.ignatt.plann.dao;
 
-import com.ignatt.plann.entity.TaskTag;
+import com.ignatt.plann.entity.Notion;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -10,40 +10,38 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class TaskTagDAOImpl implements TaskTagDAO{
+public class NotionDAOImpl implements NotionDAO {
 
     @Autowired
     private SessionFactory sessionFactory;
 
     @Override
-    public List<TaskTag> getAllTaskTag() {
+    public List<Notion> getAllNotions() {
         Session session = sessionFactory.getCurrentSession();
-        Query<TaskTag>query = session.createQuery("from TaskTag", TaskTag.class);
-        List<TaskTag> allTaskTag = query.getResultList();
-        return allTaskTag;
-    }
-
-
-    @Override
-    public void saveTaskTag(TaskTag taskTag) {
-        Session session = sessionFactory.getCurrentSession();
-        session.saveOrUpdate(taskTag);
+        Query<Notion>query = session.createQuery("from Notion", Notion.class);
+        List<Notion> allNotions = query.getResultList();
+        return allNotions;
     }
 
     @Override
-    public TaskTag getTaskTag(int id) {
+    public void saveNotion(Notion notion) {
         Session session = sessionFactory.getCurrentSession();
-        TaskTag taskTag = session.get(TaskTag.class, id);
-        return taskTag;
+        session.saveOrUpdate(notion);
     }
 
     @Override
-    public void deleteTaskTag(int id) {
+    public Notion getNotion(int id) {
         Session session = sessionFactory.getCurrentSession();
-        Query<TaskTag> query = session.createQuery("delete from TaskTag" + "where id=:taskTagId");
-        query.setParameter("taskTagId", id);
+        Notion notion = session.get(Notion.class, id);
+        return notion;
+    }
+
+    @Override
+    public void deleteNotion(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        Query<Notion> query = session.createQuery("delete from Notion" + "where id=:notionId");
+        query.setParameter("notionId", id);
         query.executeUpdate();
     }
 
 }
-
