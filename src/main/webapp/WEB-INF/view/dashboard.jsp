@@ -288,15 +288,10 @@
                     </section>
                 </div>
                 <div class="col-sm-3">
-
-                        <c:forEach var="notion" items="${allNotions}">
-
-                            <h2>${notion.title}</h2>
-                            <p>${notion.body}</p>
-                        </c:forEach>
-
-
-
+                    <c:forEach var="notion" items="${allNotions}">
+                        ${notion.title}
+                        ${notion.body}
+                    </c:forEach>
                     <hr />
                     <!-- Calendar -->
                     <div class="wrapper">
