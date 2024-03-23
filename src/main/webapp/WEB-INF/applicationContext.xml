@@ -22,9 +22,9 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close" >
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://192.168.0.104:3306/meetdatedemo?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
-        <property name="user" value="null" />
-        <property name="password" value="null" />
+        <property name="jdbcUrl" value="jdbc:mysql://roundhouse.proxy.rlwy.net:24067/railway?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+        <property name="user" value="root" />
+        <property name="password" value="d1g-F42g-5-fcd-Fa12fCAe633fgceDc" />
     </bean>
     <bean id="sessionFactory"
           class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
