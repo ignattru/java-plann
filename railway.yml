@@ -1,4 +1,4 @@
 services:
   app:
     buildCommand: mvn package
-    runCommand: java -jar target/plann.war
+    runCommand: java -jar /target/plann.war
