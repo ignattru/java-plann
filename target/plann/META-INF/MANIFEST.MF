@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: plann Maven Webapp
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Ignatt
+Implementation-Vendor-Id: com.ignatt.plann
+Created-By: IntelliJ IDEA
+Build-Jdk: 9.0.4
+Main-Class: ${start-class}
+
